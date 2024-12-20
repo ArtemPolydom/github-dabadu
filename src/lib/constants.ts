@@ -1,4 +1,4 @@
-import { Bot, Building2, Sparkles, Clock } from 'lucide-react';
+import { Building2, Sparkles, Clock, ConciergeBell } from 'lucide-react';
 
 // Don't use i18next directly here as it may not be initialized
 // Instead, we'll use translation keys that will be resolved in components
@@ -16,7 +16,7 @@ export const PARSING_MESSAGES = [
   {
     titleKey: 'landing.loading.booking',
     textKey: 'landing.loading.booking_desc',
-    icon: Bot
+    icon: ConciergeBell
   },
   {
     titleKey: 'landing.loading.assistance',
