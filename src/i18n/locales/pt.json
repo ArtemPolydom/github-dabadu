@@ -1,0 +1,78 @@
+{
+  "landing": {
+    "title": {
+      "meet": "Conheça seu",
+      "employee": "Recepcionista IA 24/7"
+    },
+    "subtitle": "Transforme a experiência do hóspede & maximize as reservas diretas",
+    "search": {
+      "placeholder": "Procure seu hotel no mapa",
+      "button": "Encontrar meu hotel agora",
+      "processing": "Processando...",
+      "clear": "Limpar seleção"
+    },
+    "discover": "Descubra como nosso funcionário IA trabalha",
+    "loading": {
+      "booking": "Simplifique reservas com precisão IA",
+      "booking_desc": "Una otimiza reservas de quartos e envia confirmações instantâneas por email ou SMS, garantindo uma experiência de reserva perfeita para seus hóspedes.",
+      "assistance": "Assistência personalizada",
+      "assistance_desc": "Una oferece recomendações personalizadas, ajuda os hóspedes a reservar restaurantes e atividades, e fornece informações locais para melhorar sua estadia.",
+      "operations": "Operações hoteleiras integradas",
+      "operations_desc": "Da integração CRM às solicitações de limpeza e manutenção, Una conecta todos os sistemas do hotel para uma operação suave.",
+      "revenue": "Transforme conversas em receita",
+      "revenue_desc": "Una aumenta as reservas diretas, captura preferências dos hóspedes e gera receita através de marketing personalizado e processos de reserva simplificados."
+    },
+    "setup": {
+      "ready": "Seu funcionário IA está quase pronto para melhorar a experiência dos hóspedes!",
+      "service": "Apenas alguns passos para o serviço 24/7!",
+      "interactions": "Você está prestes a desbloquear interações personalizadas que realmente impressionam.",
+      "support": "Seus hóspedes apreciarão o suporte instantâneo do seu funcionário!",
+      "satisfaction": "Passo a passo, você está caminhando para a satisfação máxima dos hóspedes.",
+      "bookings": "Quase lá – prepare-se para otimizar reservas diretas.",
+      "excellence": "Este último passo o aproxima da excelência operacional baseada em IA."
+    }
+  },
+  "contact": {
+    "title": "Teste seu recepcionista IA",
+    "name": "Digite seu nome",
+    "email": "Digite seu email",
+    "phone": "Digite seu número de telefone",
+    "terms": {
+      "text": "Ao clicar em \"Começar teste\" você concorda com os",
+      "service": "Termos de serviço",
+      "and": "e",
+      "privacy": "Política de privacidade"
+    },
+    "button": {
+      "loading": "Configurando...",
+      "start": "Começar teste"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "Status IA",
+      "ready": "Pronto",
+      "parsing": "Analisando...",
+      "response": "Resposta IA",
+      "availability": "Disponibilidade",
+      "time": "~1 seg",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Carregando descrição..."
+    }
+  },
+  "call": {
+    "title": "Seu recepcionista IA",
+    "ready": "Está pronto",
+    "subtitle": "Ligue agora para iniciar a conversa",
+    "button": {
+      "call": "Ligar",
+      "end": "Encerrar"
+    },
+    "error": {
+      "load": "Falha ao carregar funcionalidades de chamada. Tente novamente mais tarde.",
+      "init": "Falha ao inicializar sistema de chamada"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "landing": {
+    "title": {
+      "meet": "Seznamte se s vaším",
+      "employee": "AI recepčním 24/7"
+    },
+    "subtitle": "Transformujte zážitek hostů & maximalizujte přímé rezervace",
+    "search": {
+      "placeholder": "Vyhledejte svůj hotel na mapě",
+      "button": "Najít můj hotel nyní",
+      "processing": "Zpracování...",
+      "clear": "Vymazat výběr"
+    },
+    "discover": "Zjistěte, jak náš AI zaměstnanec funguje",
+    "loading": {
+      "booking": "Zjednodušte rezervace s AI přesností",
+      "booking_desc": "Una optimalizuje rezervace pokojů a zasílá okamžitá potvrzení e-mailem nebo SMS pro bezproblémový rezervační zážitek vašich hostů.",
+      "assistance": "Personalizovaná asistence",
+      "assistance_desc": "Una nabízí personalizovaná doporučení, pomáhá hostům s rezervací restaurací a aktivit a poskytuje místní informace pro lepší pobyt.",
+      "operations": "Integrovaný hotelový provoz",
+      "operations_desc": "Od CRM integrace po požadavky na úklid a údržbu, Una propojuje všechny hotelové systémy pro plynulý provoz.",
+      "revenue": "Proměňte konverzace v příjmy",
+      "revenue_desc": "Una zvyšuje přímé rezervace, zachycuje preference hostů a generuje příjmy prostřednictvím personalizovaného marketingu a plynulých rezervačních procesů."
+    },
+    "setup": {
+      "ready": "Váš AI zaměstnanec je téměř připraven zlepšit zážitek hostů!",
+      "service": "Jen několik kroků od 24/7 služby!",
+      "interactions": "Chystáte se odemknout personalizované interakce, které skutečně zaujmou.",
+      "support": "Vaši hosté ocení okamžitou podporu vašeho zaměstnance!",
+      "satisfaction": "Krok za krokem směřujete k nejvyšší spokojenosti hostů.",
+      "bookings": "Téměř hotovo – připravte se na optimalizaci přímých rezervací.",
+      "excellence": "Tento poslední krok vás přibližuje k provozní dokonalosti řízené AI."
+    }
+  },
+  "contact": {
+    "title": "Vyzkoušejte svého AI recepčního",
+    "name": "Zadejte své jméno",
+    "email": "Zadejte svůj email",
+    "phone": "Zadejte své telefonní číslo",
+    "terms": {
+      "text": "Kliknutím na \"Začít testování\" souhlasíte s",
+      "service": "Podmínkami služby",
+      "and": "a",
+      "privacy": "Zásadami ochrany osobních údajů"
+    },
+    "button": {
+      "loading": "Nastavování...",
+      "start": "Začít testování"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "AI Status",
+      "ready": "Připraven",
+      "parsing": "Analyzuji...",
+      "response": "AI Odpověď",
+      "availability": "Dostupnost",
+      "time": "~1 s",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Načítání popisu..."
+    }
+  },
+  "call": {
+    "title": "Váš AI recepční",
+    "ready": "Je připraven",
+    "subtitle": "Zavolejte nyní pro zahájení konverzace",
+    "button": {
+      "call": "Volat",
+      "end": "Ukončit"
+    },
+    "error": {
+      "load": "Nepodařilo se načíst funkce volání. Zkuste to prosím později.",
+      "init": "Nepodařilo se inicializovat systém volání"
+    }
+  }
+}

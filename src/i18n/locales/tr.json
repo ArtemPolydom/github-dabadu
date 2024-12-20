@@ -1,0 +1,78 @@
+{
+  "landing": {
+    "title": {
+      "meet": "7/24 Resepsiyon",
+      "employee": "AI Çalışanınızla Tanışın"
+    },
+    "subtitle": "Misafir Deneyimini Dönüştürün & Direkt Rezervasyonları Maksimize Edin",
+    "search": {
+      "placeholder": "Haritada otelinizi arayın",
+      "button": "Otelimi şimdi bul",
+      "processing": "İşleniyor...",
+      "clear": "Seçimi temizle"
+    },
+    "discover": "AI çalışanımızın nasıl çalıştığını keşfedin",
+    "loading": {
+      "booking": "AI hassasiyetiyle rezervasyonları basitleştirin",
+      "booking_desc": "Una oda rezervasyonlarını optimize eder ve misafirlerinize sorunsuz bir rezervasyon deneyimi için anında e-posta veya SMS onayları gönderir.",
+      "assistance": "Kişiselleştirilmiş yardım",
+      "assistance_desc": "Una kişiselleştirilmiş öneriler sunar, misafirlere restoran ve aktivite rezervasyonlarında yardımcı olur ve konaklamalarını iyileştirmek için yerel bilgiler sağlar.",
+      "operations": "Entegre otel operasyonları",
+      "operations_desc": "CRM entegrasyonundan temizlik ve bakım taleplerine kadar, Una sorunsuz operasyon yönetimi için tüm otel sistemlerini birbirine bağlar.",
+      "revenue": "Konuşmaları gelire dönüştürün",
+      "revenue_desc": "Una direkt rezervasyonları artırır, misafir tercihlerini yakalar ve kişiselleştirilmiş pazarlama ve sorunsuz rezervasyon süreçleri ile gelir elde eder."
+    },
+    "setup": {
+      "ready": "AI çalışanınız misafir deneyimini iyileştirmeye hazır!",
+      "service": "7/24 hizmete sadece birkaç adım kaldı!",
+      "interactions": "Gerçekten etkileyici kişiselleştirilmiş etkileşimleri açmak üzeresiniz.",
+      "support": "Misafirleriniz çalışanınızın anında desteğini takdir edecek!",
+      "satisfaction": "Adım adım en yüksek misafir memnuniyetine doğru ilerliyorsunuz.",
+      "bookings": "Neredeyse hazır – direkt rezervasyonları optimize etmeye hazırlanın.",
+      "excellence": "Bu son adım sizi AI destekli operasyonel mükemmelliğe yaklaştırıyor."
+    }
+  },
+  "contact": {
+    "title": "AI Resepsiyon Çalışanınızı Test Edin",
+    "name": "Adınızı girin",
+    "email": "E-posta adresinizi girin",
+    "phone": "Telefon numaranızı girin",
+    "terms": {
+      "text": "\"Testi başlat\" düğmesine tıklayarak",
+      "service": "Hizmet Şartları",
+      "and": "ve",
+      "privacy": "Gizlilik Politikası"
+    },
+    "button": {
+      "loading": "Ayarlanıyor...",
+      "start": "Testi başlat"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "AI Durumu",
+      "ready": "Hazır",
+      "parsing": "İşleniyor...",
+      "response": "AI Yanıtı",
+      "availability": "Kullanılabilirlik",
+      "time": "~1 sn",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Açıklama yükleniyor..."
+    }
+  },
+  "call": {
+    "title": "AI Resepsiyon Çalışanınız",
+    "ready": "Hazır",
+    "subtitle": "Görüşmeye başlamak için şimdi arayın",
+    "button": {
+      "call": "Ara",
+      "end": "Bitir"
+    },
+    "error": {
+      "load": "Arama özellikleri yüklenemedi. Lütfen daha sonra tekrar deneyin.",
+      "init": "Arama sistemi başlatılamadı"
+    }
+  }
+}

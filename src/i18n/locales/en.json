@@ -1,0 +1,59 @@
+{
+  "landing": {
+    "title": {
+      "meet": "Meet Your 24/7",
+      "employee": "AI Front Desk Employee"
+    },
+    "subtitle": "Transform Guest Experience & Maximize Direct Bookings",
+    "search": {
+      "placeholder": "Search for Your Hotel on the map",
+      "button": "Find My Hotel Now",
+      "processing": "Processing...",
+      "clear": "Clear selection"
+    },
+    "discover": "Discover How Our AI Employee Works"
+  },
+  "contact": {
+    "title": "Test Your AI Front Desk Employee",
+    "name": "Enter your name",
+    "email": "Enter your email",
+    "phone": "Enter your phone number",
+    "terms": {
+      "text": "By clicking \"Start Testing\" you agree to the",
+      "service": "Terms of Service",
+      "and": "and",
+      "privacy": "Privacy Policy"
+    },
+    "button": {
+      "loading": "Setting up...",
+      "start": "Start Testing"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "AI Status",
+      "ready": "Ready",
+      "parsing": "Parsing...",
+      "response": "AI Response",
+      "availability": "Availability",
+      "time": "~1 sec",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Loading property description..."
+    }
+  },
+  "call": {
+    "title": "Your AI Front Desk Employee",
+    "ready": "Is Ready",
+    "subtitle": "Call Now to Start Conversation",
+    "button": {
+      "call": "Call",
+      "end": "End Call"
+    },
+    "error": {
+      "load": "Failed to load call functionalities. Please try again later.",
+      "init": "Failed to initialize call system"
+    }
+  }
+}

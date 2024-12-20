@@ -1,0 +1,78 @@
+{
+  "landing": {
+    "title": {
+      "meet": "Incontra il tuo",
+      "employee": "Receptionist IA 24/7"
+    },
+    "subtitle": "Trasforma l'esperienza degli ospiti & massimizza le prenotazioni dirette",
+    "search": {
+      "placeholder": "Cerca il tuo hotel sulla mappa",
+      "button": "Trova il mio hotel ora",
+      "processing": "Elaborazione...",
+      "clear": "Cancella selezione"
+    },
+    "discover": "Scopri come funziona il nostro dipendente IA",
+    "loading": {
+      "booking": "Semplifica le prenotazioni con la precisione dell'IA",
+      "booking_desc": "Una ottimizza le prenotazioni delle camere e invia conferme istantanee via email o SMS, garantendo un'esperienza di prenotazione fluida per i tuoi ospiti.",
+      "assistance": "Assistenza personalizzata",
+      "assistance_desc": "Una offre raccomandazioni personalizzate, aiuta gli ospiti a prenotare ristoranti e attività, e fornisce informazioni locali per migliorare il loro soggiorno.",
+      "operations": "Operazioni alberghiere integrate",
+      "operations_desc": "Dall'integrazione CRM alle richieste di pulizia e manutenzione, Una collega tutti i sistemi dell'hotel per una gestione fluida.",
+      "revenue": "Trasforma le conversazioni in ricavi",
+      "revenue_desc": "Una aumenta le prenotazioni dirette, cattura le preferenze degli ospiti e genera ricavi attraverso il marketing personalizzato e processi di prenotazione fluidi."
+    },
+    "setup": {
+      "ready": "Il tuo dipendente IA è quasi pronto a migliorare l'esperienza degli ospiti!",
+      "service": "Solo pochi passi dal servizio 24/7!",
+      "interactions": "Stai per sbloccare interazioni personalizzate davvero impressionanti.",
+      "support": "I tuoi ospiti apprezzeranno il supporto istantaneo del tuo dipendente!",
+      "satisfaction": "Passo dopo passo, ti stai muovendo verso la massima soddisfazione degli ospiti.",
+      "bookings": "Quasi fatto – preparati a ottimizzare le prenotazioni dirette.",
+      "excellence": "Quest'ultimo passo ti avvicina all'eccellenza operativa basata sull'IA."
+    }
+  },
+  "contact": {
+    "title": "Prova il tuo receptionist IA",
+    "name": "Inserisci il tuo nome",
+    "email": "Inserisci la tua email",
+    "phone": "Inserisci il tuo numero di telefono",
+    "terms": {
+      "text": "Cliccando su \"Inizia il test\" accetti i",
+      "service": "Termini di servizio",
+      "and": "e la",
+      "privacy": "Privacy Policy"
+    },
+    "button": {
+      "loading": "Configurazione...",
+      "start": "Inizia il test"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "Stato IA",
+      "ready": "Pronto",
+      "parsing": "Analisi...",
+      "response": "Risposta IA",
+      "availability": "Disponibilità",
+      "time": "~1 sec",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Caricamento descrizione..."
+    }
+  },
+  "call": {
+    "title": "Il tuo receptionist IA",
+    "ready": "È pronto",
+    "subtitle": "Chiama ora per iniziare la conversazione",
+    "button": {
+      "call": "Chiama",
+      "end": "Termina"
+    },
+    "error": {
+      "load": "Impossibile caricare le funzionalità di chiamata. Riprova più tardi.",
+      "init": "Impossibile inizializzare il sistema di chiamata"
+    }
+  }
+}

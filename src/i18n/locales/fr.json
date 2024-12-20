@@ -1,0 +1,78 @@
+{
+  "landing": {
+    "title": {
+      "meet": "Rencontrez votre",
+      "employee": "Réceptionniste IA 24/7"
+    },
+    "subtitle": "Transformez l'expérience client & maximisez les réservations directes",
+    "search": {
+      "placeholder": "Recherchez votre hôtel sur la carte",
+      "button": "Trouver mon hôtel maintenant",
+      "processing": "Traitement...",
+      "clear": "Effacer la sélection"
+    },
+    "discover": "Découvrez comment fonctionne notre employé IA",
+    "loading": {
+      "booking": "Simplifiez les réservations avec la précision de l'IA",
+      "booking_desc": "Una optimise les réservations de chambres et envoie des confirmations instantanées par email ou SMS, assurant une expérience de réservation fluide pour vos clients.",
+      "assistance": "Assistance personnalisée",
+      "assistance_desc": "Una offre des recommandations personnalisées, aide les clients à réserver restaurants et activités, et fournit des informations locales pour améliorer leur séjour.",
+      "operations": "Opérations hôtelières intégrées",
+      "operations_desc": "De l'intégration CRM aux demandes de ménage et de maintenance, Una connecte tous les systèmes hôteliers pour une gestion fluide.",
+      "revenue": "Transformez les conversations en revenus",
+      "revenue_desc": "Una augmente les réservations directes, capture les préférences des clients et génère des revenus grâce au marketing personnalisé et aux processus de réservation fluides."
+    },
+    "setup": {
+      "ready": "Votre employé IA est presque prêt à améliorer l'expérience client !",
+      "service": "Plus que quelques étapes avant un service 24/7 !",
+      "interactions": "Vous êtes sur le point de débloquer des interactions personnalisées vraiment impressionnantes.",
+      "support": "Vos clients apprécieront le support instantané de votre employé !",
+      "satisfaction": "Pas à pas, vous progressez vers une satisfaction client optimale.",
+      "bookings": "Presque terminé – préparez-vous à optimiser les réservations directes.",
+      "excellence": "Cette dernière étape vous rapproche de l'excellence opérationnelle basée sur l'IA."
+    }
+  },
+  "contact": {
+    "title": "Testez votre réceptionniste IA",
+    "name": "Entrez votre nom",
+    "email": "Entrez votre email",
+    "phone": "Entrez votre numéro de téléphone",
+    "terms": {
+      "text": "En cliquant sur \"Commencer le test\" vous acceptez les",
+      "service": "Conditions d'utilisation",
+      "and": "et la",
+      "privacy": "Politique de confidentialité"
+    },
+    "button": {
+      "loading": "Configuration...",
+      "start": "Commencer le test"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "Statut IA",
+      "ready": "Prêt",
+      "parsing": "Analyse...",
+      "response": "Réponse IA",
+      "availability": "Disponibilité",
+      "time": "~1 sec",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Chargement de la description..."
+    }
+  },
+  "call": {
+    "title": "Votre réceptionniste IA",
+    "ready": "Est prêt",
+    "subtitle": "Appelez maintenant pour commencer la conversation",
+    "button": {
+      "call": "Appeler",
+      "end": "Terminer"
+    },
+    "error": {
+      "load": "Échec du chargement des fonctionnalités d'appel. Veuillez réessayer plus tard.",
+      "init": "Échec de l'initialisation du système d'appel"
+    }
+  }
+}
