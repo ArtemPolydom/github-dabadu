@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Bot } from 'lucide-react';
+import { Blocks } from 'lucide-react';
 import { SETUP_MESSAGES } from '@/lib/constants';
 
 interface FinalSetupLoaderProps {
@@ -34,9 +34,9 @@ export function FinalSetupLoader({ parsingProgress = 0, isParsingComplete = fals
     <div className="flex flex-col items-center justify-center space-y-6 p-8 bg-white rounded-lg shadow-lg">
       <div className="relative">
         <div className="absolute inset-0 animate-ping">
-          <Bot className="w-12 h-12 text-green-500 opacity-75" />
+          <Blocks className="w-12 h-12 text-green-500 opacity-75" />
         </div>
-        <Bot className="w-12 h-12 text-green-500 relative" />
+        <Blocks className="w-12 h-12 text-green-500 relative" />
       </div>
       
       <div className="w-64 h-2 bg-gray-200 rounded-full overflow-hidden">
