@@ -2,22 +2,41 @@
   "landing": {
     "title": {
       "meet": "Meet Your 24/7",
-      "employee": "Front Desk Employee"
+      "employee": "Virtual Front Desk Manager"
     },
-    "subtitle": "Transform Guest Experience & Maximize Direct Bookings",
+    "subtitle": "Enhance Guest Experience & Maximize Direct Bookings",
     "search": {
-      "placeholder": "Search for Your Hotel on the map",
-      "button": "Find My Hotel Now",
-      "processing": "Processing...",
-      "clear": "Clear selection"
+      "placeholder": "Find Your Hotel on the Map",
+      "button": "Find Hotel",
+      "processing": "Searching...",
+      "clear": "Clear Selection"
     },
-    "discover": "Discover How Our AI Employee Works"
+    "discover": "Discover Virtual Front Desk Manager Capabilities",
+    "loading": {
+      "booking": "Simplify Booking with Smart Technology",
+      "booking_desc": "Una optimizes room bookings and sends instant confirmations via email or SMS, ensuring a convenient process for your guests.",
+      "assistance": "Personalized Support",
+      "assistance_desc": "Una provides tailored recommendations, helps guests book restaurants and events, and offers information about local attractions.",
+      "operations": "Comprehensive Hotel Management",
+      "operations_desc": "From CRM integration to housekeeping and maintenance requests - Una unifies all hotel systems for efficient management.",
+      "revenue": "Turn Conversations into Revenue",
+      "revenue_desc": "Una increases direct bookings, collects guest preferences, and boosts revenue through personalized marketing and streamlined booking process."
+    },
+    "setup": {
+      "ready": "Your Virtual Front Desk Manager is Almost Ready to Enhance Guest Service!",
+      "service": "Just a Few Steps Away from Launching 24/7 Service!",
+      "interactions": "You're on Your Way to Impressive Personalized Service.",
+      "support": "Your Guests Will Appreciate Instant Front Desk Support!",
+      "satisfaction": "Step by Step Towards Increasing Guest Satisfaction.",
+      "bookings": "Almost There - Moving to Direct Booking Optimization.",
+      "excellence": "Final Step Towards Innovative Hotel Management."
+    }
   },
   "contact": {
-    "title": "Test Your AI Front Desk Employee",
-    "name": "Enter your name",
-    "email": "Enter your email",
-    "phone": "Enter your phone number",
+    "title": "Test Your Virtual Front Desk Manager",
+    "name": "Enter Your Name",
+    "email": "Enter Your Email",
+    "phone": "Enter Your Phone Number",
     "terms": {
       "text": "By clicking \"Start Testing\" you agree to the",
       "service": "Terms of Service",
@@ -25,35 +44,35 @@
       "privacy": "Privacy Policy"
     },
     "button": {
-      "loading": "Setting up...",
+      "loading": "Setting Up...",
       "start": "Start Testing"
     }
   },
   "property": {
     "status": {
-      "ai": "AI Status",
+      "ai": "System Status",
       "ready": "Ready",
-      "parsing": "Parsing...",
-      "response": "AI Response",
+      "parsing": "Analyzing...",
+      "response": "Response Time",
       "availability": "Availability",
       "time": "~1 sec",
       "hours": "24/7"
     },
     "description": {
-      "loading": "Loading property description..."
+      "loading": "Loading Description..."
     }
   },
   "call": {
-    "title": "Your AI Front Desk Employee",
-    "ready": "Is Ready",
+    "title": "Your Virtual Front Desk Manager",
+    "ready": "is Ready",
     "subtitle": "Call Now to Start Conversation",
     "button": {
       "call": "Call",
       "end": "End Call"
     },
     "error": {
-      "load": "Failed to load call functionalities. Please try again later.",
-      "init": "Failed to initialize call system"
+      "load": "Failed to load communication system. Please try again later.",
+      "init": "Communication system initialization error"
     }
   }
 }
