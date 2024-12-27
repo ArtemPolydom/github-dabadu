@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { LucideIcon } from 'lucide-react';
 import { PARSING_MESSAGES, SETUP_MESSAGES } from '@/lib/constants/messages';
 
 interface ParsingLoaderProps {
