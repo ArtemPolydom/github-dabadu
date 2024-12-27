@@ -3,12 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { LucideIcon } from 'lucide-react';
 import { PARSING_MESSAGES, SETUP_MESSAGES } from '@/lib/constants/messages';
 
-interface ParsingMessage {
-  titleKey: string;
-  textKey: string;
-  icon: LucideIcon;
-}
-
 interface ParsingLoaderProps {
   progress?: number;
   isSettingUp?: boolean;
