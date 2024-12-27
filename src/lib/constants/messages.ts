@@ -1,17 +1,5 @@
 import { Building2, Sparkles, Clock, ConciergeBell } from 'lucide-react';
 
-// Don't use i18next directly here as it may not be initialized
-// Instead, we'll use translation keys that will be resolved in components
-export const SETUP_MESSAGES = [
-  'landing.setup.ready',
-  'landing.setup.service',
-  'landing.setup.interactions',
-  'landing.setup.support',
-  'landing.setup.satisfaction',
-  'landing.setup.bookings',
-  'landing.setup.excellence'
-];
-
 export const PARSING_MESSAGES = [
   {
     titleKey: 'landing.loading.booking',
@@ -33,4 +21,14 @@ export const PARSING_MESSAGES = [
     textKey: 'landing.loading.revenue_desc',
     icon: Sparkles
   }
+];
+
+export const SETUP_MESSAGES = [
+  'landing.setup.ready',
+  'landing.setup.service',
+  'landing.setup.interactions',
+  'landing.setup.support',
+  'landing.setup.satisfaction',
+  'landing.setup.bookings',
+  'landing.setup.excellence'
 ];

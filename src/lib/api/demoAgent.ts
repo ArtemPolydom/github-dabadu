@@ -1,3 +1,5 @@
+import { API_CONFIG } from './config';
+
 interface ClientData {
   name: string;
   phone: string;
@@ -24,14 +26,13 @@ interface DemoAgentResponse {
 export async function createDemoAgent(
   data: CreateDemoAgentRequest
 ): Promise<DemoAgentResponse> {
-  console.log('Sending create demo agent request:', data);
   const response = await fetch(
-    'https://property-parser-no-phone.replit.app/api/create_demo_agent',
+    `${API_CONFIG.BASE_URL}/create_demo_agent`,
     {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer FPqbMiRG8Ugaq6lKO0vbpwhJjxha9ghnepg52SNS5tI',
+        Authorization: `Bearer ${API_CONFIG.AUTH_TOKEN}`,
       },
       body: JSON.stringify(data),
     }
@@ -44,6 +45,5 @@ export async function createDemoAgent(
   }
 
   const result = await response.json();
-  console.log('Create demo agent response:', result);
   return result;
 }

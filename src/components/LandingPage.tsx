@@ -1,70 +1,46 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Search, Loader2, X } from 'lucide-react';
-import { usePlacesAutocomplete, type PlaceResult } from '@/hooks/usePlacesAutocomplete';
+import { usePlacesAutocomplete } from '@/hooks/usePlacesAutocomplete';
 import { ParsingLoader } from './ParsingLoader';
-import { PropertyCard } from './PropertyCard';
-import { ContactForm } from './ContactForm';
-import { createDemoAgent } from '@/lib/api';
-import { FinalSetupLoader } from './FinalSetupLoader';
+import { createDemoAgent } from '@/lib/api/demoAgent';
+import { parsePropertyInfo } from '@/lib/api/propertyParser';
 import { AIReceptionistCard } from './AIReceptionistCard';
 import { ErrorBanner } from './ErrorBanner';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ANONYMOUS_USER } from '@/lib/constants/user';
 
-const PARSER_API = 'https://property-parser-no-phone.replit.app/api/parse_property_info_stream';
-
-const LandingPage = () => {
+export function LandingPage() {
   const { t } = useTranslation();
   const { selectedPlace, error, clearSelection } = usePlacesAutocomplete();
   const [isParsing, setIsParsing] = useState(false);
   const [hasStartedParsing, setHasStartedParsing] = useState(false);
-  const [allMessagesShown, setAllMessagesShown] = useState(false);
-  const [showContactForm, setShowContactForm] = useState(false);
   const [isSettingUp, setIsSettingUp] = useState(false);
   const [setupComplete, setSetupComplete] = useState(false);
-  const [propertyDescription, setPropertyDescription] = useState<string>('');
-  const [isParsingComplete, setIsParsingComplete] = useState(false);
-  const [hasReceivedSemiResult, setHasReceivedSemiResult] = useState(false);
   const [parsingProgress, setParsingProgress] = useState(0);
-  const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   const [parserResult, setParserResult] = useState<any>(null);
-  const [pendingContactData, setPendingContactData] = useState<any>(null);
   const [agentId, setAgentId] = useState<string>('');
   const [processingError, setProcessingError] = useState(false);
   const [errorContext, setErrorContext] = useState<'parsing' | 'agentCreation' | null>(null);
-  const [showHelpTooltip, setShowHelpTooltip] = useState(false);
   const [agentCreationStarted, setAgentCreationStarted] = useState(false);
 
-  const helpButtonRef = useRef<HTMLButtonElement | null>(null);
-  const tooltipRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (isParsingComplete && isSettingUp && pendingContactData && parserResult && !agentCreationStarted) {
-      setAgentCreationStarted(true);
-      const createAgentAsync = async () => {
-        try {
-          await createAgent(pendingContactData, parserResult);
-        } catch (error) {
-          console.error('Agent creation failed:', error);
-        }
-      };
-      createAgentAsync();
-    }
-  }, [isParsingComplete, isSettingUp, pendingContactData, parserResult, agentCreationStarted]);
-
-  const createAgent = async (contactData: any, propertyData: any) => {
+  const createAgent = async () => {
     try {
       setErrorContext(null);
 
-      if (!propertyData || !contactData) {
+      if (!parserResult || !selectedPlace) {
         setProcessingError(true);
         setErrorContext('agentCreation');
         return;
       }
 
       const response = await createDemoAgent({
-        client_data: contactData,
-        property_data: propertyData,
+        client_data: {
+          ...ANONYMOUS_USER,
+          business_name: selectedPlace.name,
+          business_address: selectedPlace.formatted_address
+        },
+        property_data: parserResult,
         property_type: 'hotel',
       });
 
@@ -87,85 +63,13 @@ const LandingPage = () => {
     }
   };
 
-  const parsePropertyInfo = async (place: PlaceResult) => {
-    setProcessingError(false);
-    setErrorContext(null);
-
-    const requestBody = {
-      search_query: `${place.name} ${place.formatted_address}`,
-      country: place.country,
-      property_type: 'hotel',
-      semi_result: true,
-    };
-
-    try {
-      const response = await fetch(PARSER_API, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: 'Bearer FPqbMiRG8Ugaq6lKO0vbpwhJjxha9ghnepg52SNS5tI',
-        },
-        body: JSON.stringify(requestBody),
-      });
-
-      if (!response.ok) {
-        throw new Error(`Failed to connect to the server (${response.status})`);
-      }
-
-      const reader = response.body?.getReader();
-      if (!reader) {
-        throw new Error('Failed to initialize data stream');
-      }
-
-      let buffer = '';
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        buffer += new TextDecoder().decode(value);
-        const lines = buffer.split('\n');
-        buffer = lines.pop() || '';
-
-        for (const line of lines.filter((line) => line.trim())) {
-          try {
-            const data = JSON.parse(line);
-
-            if (data.progress) {
-              setParsingProgress(data.progress);
-            }
-
-            if (data.semi_summary) {
-              setPropertyDescription(data.semi_summary);
-              setHasReceivedSemiResult(true);
-            }
-
-            if (data.status === 'completed' || data.status === 'All set! Your property details are ready!') {
-              if (data.result) {
-                setParserResult(data.result);
-                setIsParsingComplete(true);
-                if (data.result?.description) {
-                  setPropertyDescription(data.result.description);
-                }
-              }
-            }
-          } catch (e) {
-            if (line.trim() && !line.includes('"unique_selling_points"')) {
-              setProcessingError(true);
-              setErrorContext('parsing');
-            }
-          }
-        }
-      }
-    } catch (error) {
-      console.error('Processing error:', error);
-      setProcessingError(true);
-      setErrorContext('parsing');
-      setIsParsing(false);
-      setHasStartedParsing(false);
-      setShowContactForm(false);
+  useEffect(() => {
+    if (parserResult && !agentCreationStarted) {
+      setAgentCreationStarted(true);
+      setIsSettingUp(true);
+      createAgent();
     }
-  };
+  }, [parserResult, agentCreationStarted]);
 
   const handleFindProperty = async () => {
     if (!selectedPlace) return;
@@ -173,17 +77,23 @@ const LandingPage = () => {
     setProcessingError(false);
     setErrorContext(null);
     setParsingProgress(0);
-    setAllMessagesShown(false);
     setHasStartedParsing(true);
     setIsParsing(true);
-    setHasReceivedSemiResult(false);
-    setIsParsingComplete(false);
     setParserResult(null);
-    setPendingContactData(null);
     setAgentCreationStarted(false);
 
     try {
-      await parsePropertyInfo(selectedPlace);
+      await parsePropertyInfo(selectedPlace, {
+        onProgress: setParsingProgress,
+        onSemiResult: () => {},
+        onComplete: (result) => {
+          setParserResult(result);
+        },
+        onError: () => {
+          setProcessingError(true);
+          setErrorContext('parsing');
+        }
+      });
     } catch (error) {
       console.error('Find property error:', error);
       setProcessingError(true);
@@ -194,52 +104,12 @@ const LandingPage = () => {
   const handleRetry = () => {
     if (errorContext === 'parsing') {
       handleFindProperty();
-    } else if (errorContext === 'agentCreation') {
-      if (isParsingComplete && pendingContactData && parserResult) {
-        setProcessingError(false);
-        setIsSettingUp(true);
-        setAgentCreationStarted(false);
-      }
+    } else if (errorContext === 'agentCreation' && parserResult) {
+      setProcessingError(false);
+      setIsSettingUp(true);
+      setAgentCreationStarted(false);
     }
   };
-
-  useEffect(() => {
-    if (hasReceivedSemiResult && allMessagesShown) {
-      setIsParsing(false);
-      setShowContactForm(true);
-    }
-  }, [hasReceivedSemiResult, allMessagesShown]);
-
-  const handleContactSubmit = async (data: {
-    name: string;
-    email: string;
-    business_address: string;
-    phone: string;
-    business_name: string;
-  }) => {
-    setPendingContactData(data);
-    setIsSettingUp(true);
-    setErrorContext(null);
-  };
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        showHelpTooltip &&
-        helpButtonRef.current &&
-        tooltipRef.current &&
-        !helpButtonRef.current.contains(event.target as Node) &&
-        !tooltipRef.current.contains(event.target as Node)
-      ) {
-        setShowHelpTooltip(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [showHelpTooltip]);
 
   return (
     <div className="min-h-screen bg-white pt-4 md:pt-2">
@@ -277,97 +147,70 @@ const LandingPage = () => {
           </div>
         )}
 
-        {!showContactForm && (
+        {!setupComplete && (
           <>
-            {isParsing && hasStartedParsing && (
+            {isParsing && hasStartedParsing ? (
               <div className="w-full max-w-2xl mt-8 mb-12">
                 <ParsingLoader
-                  onAllMessagesShown={() => setAllMessagesShown(true)}
-                  forceComplete={hasReceivedSemiResult && currentMessageIndex === 0}
-                  onMessageChange={setCurrentMessageIndex}
+                  progress={parsingProgress}
+                  isSettingUp={isSettingUp}
+                  isParsingComplete={!!parserResult}
                 />
+              </div>
+            ) : (
+              <div className="mt-8 w-full max-w-md">
+                <div className="relative">
+                  {selectedPlace && !isParsing ? (
+                    <button
+                      onClick={clearSelection}
+                      className="absolute left-3 top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity"
+                      aria-label={t('landing.search.clear')}
+                    >
+                      <X className="h-5 w-5 text-gray-400" />
+                    </button>
+                  ) : (
+                    <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                  )}
+
+                  <input
+                    id="search-input"
+                    type="text"
+                    placeholder={t('landing.search.placeholder')}
+                    className="w-full rounded-lg border border-gray-300 py-3 pl-10 pr-12 text-gray-900 focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500"
+                  />
+                </div>
+                {error && <p className="mt-2 text-sm text-red-500">{error}</p>}
+                <button
+                  className="mt-4 w-full rounded-lg bg-green-500 px-4 py-3 font-semibold text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  disabled={!selectedPlace || isParsing}
+                  onClick={handleFindProperty}
+                >
+                  {isParsing ? (
+                    <span className="flex items-center justify-center">
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      {t('landing.search.processing')}
+                    </span>
+                  ) : (
+                    t('landing.search.button')
+                  )}
+                </button>
               </div>
             )}
-
-            <div className="mt-8 w-full max-w-md">
-              <div className="relative">
-                {selectedPlace && !isParsing ? (
-                  <button
-                    onClick={clearSelection}
-                    className="absolute left-3 top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity"
-                    aria-label={t('landing.search.clear')}
-                  >
-                    <X className="h-5 w-5 text-gray-400" />
-                  </button>
-                ) : (
-                  <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
-                )}
-
-                <input
-                  id="search-input"
-                  type="text"
-                  placeholder={t('landing.search.placeholder')}
-                  className="w-full rounded-lg border border-gray-300 py-3 pl-10 pr-12 text-gray-900 focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500"
-                />
-              </div>
-              {error && <p className="mt-2 text-sm text-red-500">{error}</p>}
-              <button
-                className="mt-4 w-full rounded-lg bg-green-500 px-4 py-3 font-semibold text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                disabled={!selectedPlace || isParsing}
-                onClick={handleFindProperty}
-              >
-                {isParsing ? (
-                  <span className="flex items-center justify-center">
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    {t('landing.search.processing')}
-                  </span>
-                ) : (
-                  t('landing.search.button')
-                )}
-              </button>
-            </div>
           </>
         )}
 
-        {showContactForm && selectedPlace && !isSettingUp && !setupComplete && (
-          <div className="mt-8 grid md:grid-cols-2 gap-8 w-full max-w-4xl">
-            <PropertyCard
-              name={selectedPlace.name}
-              address={selectedPlace.formatted_address}
-              country={selectedPlace.country}
-              state={selectedPlace.state}
-              isParsingComplete={isParsingComplete}
-              description={propertyDescription}
-            />
-            <ContactForm
-              onSubmit={handleContactSubmit}
-              businessName={selectedPlace.name}
-              businessAddress={selectedPlace.formatted_address}
-            />
-          </div>
-        )}
-
-        {isSettingUp && (
-          <div className="mt-8 w-full max-w-md">
-            <FinalSetupLoader
-              parsingProgress={parsingProgress}
-              isParsingComplete={isParsingComplete}
-            />
-          </div>
-        )}
-
-        {setupComplete && (
+        {setupComplete && selectedPlace && (
           <div className="flex flex-col items-center w-full">
             <AIReceptionistCard
-              businessName={selectedPlace?.name || ''}
-              state={selectedPlace?.state || ''}
-              country={selectedPlace?.country || ''}
+              businessName={selectedPlace.name}
+              state={selectedPlace.state}
+              country={selectedPlace.country}
               agentId={agentId}
             />
           </div>
         )}
 
-        {!isParsing && !showContactForm && (
+        {!isParsing && !setupComplete && (
           <a
             href="https://polydom.ai"
             target="_blank"
@@ -380,6 +223,4 @@ const LandingPage = () => {
       </div>
     </div>
   );
-};
-
-export default LandingPage;
+}
