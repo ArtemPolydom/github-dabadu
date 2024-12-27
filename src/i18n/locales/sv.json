@@ -1,0 +1,78 @@
+{
+  "landing": {
+    "title": {
+      "meet": "Möt din 24/7",
+      "employee": "receptionist"
+    },
+    "subtitle": "Förbättra gästupplevelsen & maximera direktbokningar",
+    "search": {
+      "placeholder": "Sök ditt hotell på kartan",
+      "button": "Hitta hotell",
+      "processing": "Söker...",
+      "clear": "Rensa val"
+    },
+    "discover": "Upptäck hur vår AI-medarbetare fungerar",
+    "loading": {
+      "booking": "Förenkla bokningar med AI-precision",
+      "booking_desc": "Una optimerar rumsbokningar och skickar direkta bekräftelser via e-post eller SMS för en smidig bokningsupplevelse för dina gäster.",
+      "assistance": "Personlig assistans",
+      "assistance_desc": "Una erbjuder skräddarsydda rekommendationer, hjälper gäster att boka restauranger och aktiviteter, och ger lokal information för en bättre vistelse.",
+      "operations": "Integrerad hotelldrift",
+      "operations_desc": "Från CRM-integration till städning och underhållsförfrågningar kopplar Una samman alla hotellsystem för smidig drift.",
+      "revenue": "Omvandla konversationer till intäkter",
+      "revenue_desc": "Una ökar direktbokningar, fångar gästpreferenser och genererar intäkter genom personaliserad marknadsföring och smidiga bokningsprocesser."
+    },
+    "setup": {
+      "ready": "Din AI-medarbetare är nästan redo att förbättra gästupplevelsen!",
+      "service": "Bara några steg kvar till 24/7-service!",
+      "interactions": "Du är på väg att låsa upp personliga interaktioner som verkligen imponerar.",
+      "support": "Dina gäster kommer att uppskatta omedelbart stöd från din medarbetare!",
+      "satisfaction": "Steg för steg mot högsta gästnöjdhet.",
+      "bookings": "Nästan klart – förbered dig på att optimera direktbokningar.",
+      "excellence": "Detta sista steg tar dig närmare AI-driven operativ excellens."
+    }
+  },
+  "contact": {
+    "title": "Testa din AI-receptionist",
+    "name": "Ange ditt namn",
+    "email": "Ange din e-post",
+    "phone": "Ange ditt telefonnummer",
+    "terms": {
+      "text": "Genom att klicka på \"Starta test\" godkänner du",
+      "service": "Användarvillkoren",
+      "and": "och",
+      "privacy": "Integritetspolicyn"
+    },
+    "button": {
+      "loading": "Konfigurerar...",
+      "start": "Starta test"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "AI-status",
+      "ready": "Redo",
+      "parsing": "Analyserar...",
+      "response": "AI-svar",
+      "availability": "Tillgänglighet",
+      "time": "~1 sek",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Laddar beskrivning..."
+    }
+  },
+  "call": {
+    "title": "Din AI-receptionist",
+    "ready": "är redo",
+    "subtitle": "Ring nu för att starta konversationen",
+    "button": {
+      "call": "Ring",
+      "end": "Avsluta"
+    },
+    "error": {
+      "load": "Det gick inte att ladda samtalsfunktioner. Försök igen senare.",
+      "init": "Det gick inte att initiera samtalssystemet"
+    }
+  }
+}
