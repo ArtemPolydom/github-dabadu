@@ -3,16 +3,16 @@ import { useTranslation } from 'react-i18next';
 import { LucideIcon } from 'lucide-react';
 import { PARSING_MESSAGES, SETUP_MESSAGES } from '@/lib/constants/messages';
 
-interface ParsingLoaderProps {
-  progress?: number;
-  isSettingUp?: boolean;
-  isParsingComplete?: boolean;
-}
-
 interface ParsingMessage {
   titleKey: string;
   textKey: string;
   icon: LucideIcon;
+}
+
+interface ParsingLoaderProps {
+  progress?: number;
+  isSettingUp?: boolean;
+  isParsingComplete?: boolean;
 }
 
 export function ParsingLoader({ 
@@ -34,17 +34,16 @@ export function ParsingLoader({
 
   const messages = isSettingUp ? SETUP_MESSAGES : PARSING_MESSAGES;
   const currentMessageData = messages[currentMessage];
-  const MessageIcon = !isSettingUp && 'icon' in currentMessageData ? currentMessageData.icon : undefined;
   const displayProgress = isParsingComplete ? 100 : Math.min(95, progress);
 
   return (
     <div className="flex flex-col items-center justify-center space-y-6 p-8 bg-white/50 backdrop-blur-sm rounded-lg">
-      {!isSettingUp && MessageIcon && (
+      {!isSettingUp && typeof currentMessageData !== 'string' && currentMessageData.icon && (
         <div className="relative">
           <div className="absolute inset-0 animate-ping">
-            <MessageIcon className="w-12 h-12 text-green-500 opacity-75" />
+            <currentMessageData.icon className="w-12 h-12 text-green-500 opacity-75" />
           </div>
-          <MessageIcon className="w-12 h-12 text-green-500 relative" />
+          <currentMessageData.icon className="w-12 h-12 text-green-500 relative" />
         </div>
       )}
       
@@ -59,7 +58,7 @@ export function ParsingLoader({
         <h3 className="text-2xl font-semibold text-gray-900">
           {t(typeof currentMessageData === 'string' ? currentMessageData : currentMessageData.titleKey)}
         </h3>
-        {!isSettingUp && 'textKey' in currentMessageData && (
+        {!isSettingUp && typeof currentMessageData !== 'string' && (
           <p className="text-base text-gray-600 max-w-xl leading-relaxed">
             {t(currentMessageData.textKey)}
           </p>
