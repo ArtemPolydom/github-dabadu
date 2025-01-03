@@ -125,7 +125,7 @@ export function LandingPage() {
   };
 
   const handleStartAgain = () => {
-    clearSelection();
+    clearSelection?.(); // Use optional chaining
     setSetupComplete(false);
     setIsParsing(false);
     setIsSettingUp(false);
