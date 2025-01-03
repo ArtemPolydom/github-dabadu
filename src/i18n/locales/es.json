@@ -1,0 +1,85 @@
+{
+  "landing": {
+    "restart": {
+      "button": "Comenzar de nuevo"
+    },
+    "book": {
+      "button": "Reservar una demo",
+      "learn": "Aprende más sobre lo que Una puede hacer"
+    },
+    "title": {
+      "meet": "Habla con Una,",
+      "employee": "la primera recepcionista digital impulsada por IA"
+    },
+    "subtitle": "Mejora la Experiencia del Huésped y Maximiza las Reservas Directas",
+    "search": {
+      "placeholder": "Ingresa el nombre de tu hotel",
+      "button": "Entrenar empleado",
+      "processing": "Buscando...",
+      "clear": "Borrar selección"
+    },
+    "discover": "Reserva una demo y aprende más sobre lo que Una puede hacer",
+    "loading": {
+      "booking": "Simplifica las Reservas con Tecnología Inteligente",
+      "booking_desc": "Una optimiza las reservas de habitaciones y envía confirmaciones instantáneas por correo electrónico o SMS, asegurando un proceso conveniente para tus huéspedes.",
+      "assistance": "Soporte Personalizado",
+      "assistance_desc": "Una proporciona recomendaciones personalizadas, ayuda a los huéspedes a reservar restaurantes y eventos, y ofrece información sobre atracciones locales.",
+      "operations": "Gestión Hotelera Integral",
+      "operations_desc": "Desde la integración con CRM hasta solicitudes de limpieza y mantenimiento - Una unifica todos los sistemas del hotel para una gestión eficiente.",
+      "revenue": "Convierte Conversaciones en Ingresos",
+      "revenue_desc": "Una aumenta las reservas directas, recopila preferencias de huéspedes y aumenta los ingresos a través de marketing personalizado y un proceso de reserva simplificado."
+    },
+    "setup": {
+      "ready": "¡Tu Gerente de Recepción Virtual Está Casi Lista para Mejorar el Servicio al Huésped!",
+      "service": "¡A Solo Unos Pasos de Lanzar el Servicio 24/7!",
+      "interactions": "Estás en Camino a un Impresionante Servicio Personalizado.",
+      "support": "¡Tus Huéspedes Apreciarán el Soporte Instantáneo de Recepción!",
+      "satisfaction": "Paso a Paso Hacia el Aumento de la Satisfacción del Huésped.",
+      "bookings": "Casi Allí - Avanzando Hacia la Optimización de Reservas Directas.",
+      "excellence": "Paso Final Hacia la Gestión Hotelera Innovadora."
+    }
+  },
+  "contact": {
+    "title": "Prueba Tu Gerente de Recepción Virtual",
+    "name": "Ingresa Tu Nombre",
+    "email": "Ingresa Tu Correo Electrónico",
+    "phone": "Ingresa Tu Número de Teléfono",
+    "terms": {
+      "text": "Al hacer clic en \"Comenzar Prueba\" aceptas los",
+      "service": "Términos de Servicio",
+      "and": "y",
+      "privacy": "Política de Privacidad"
+    },
+    "button": {
+      "loading": "Configurando...",
+      "start": "Comenzar Prueba"
+    }
+  },
+  "property": {
+    "status": {
+      "ai": "Estado del Sistema",
+      "ready": "Listo",
+      "parsing": "Analizando...",
+      "response": "Tiempo de Respuesta",
+      "availability": "Disponibilidad",
+      "time": "~1 seg",
+      "hours": "24/7"
+    },
+    "description": {
+      "loading": "Cargando Descripción..."
+    }
+  },
+  "call": {
+    "title": "Tu Gerente de Recepción Virtual",
+    "ready": "está Lista",
+    "subtitle": "Llama Ahora para Iniciar la Conversación",
+    "button": {
+      "call": "Llamar",
+      "end": "Finalizar Llamada"
+    },
+    "error": {
+      "load": "Error al cargar el sistema de comunicación. Por favor, inténtalo de nuevo más tarde.",
+      "init": "Error de inicialización del sistema de comunicación"
+    }
+  }
+}

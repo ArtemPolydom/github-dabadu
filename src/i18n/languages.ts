@@ -1,6 +1,6 @@
 export const languages = {
   en: { nativeName: 'English' },
-  ru: { nativeName: 'Русский' },
+  es: { nativeName: 'Español' },
   de: { nativeName: 'Deutsch' },
   fr: { nativeName: 'Français' },
   cs: { nativeName: 'Čeština' },
@@ -8,6 +8,7 @@ export const languages = {
   tr: { nativeName: 'Türkçe' },
   it: { nativeName: 'Italiano' },
   sv: { nativeName: 'Svenska' },
+  ru: { nativeName: 'Русский' },
   zh: { nativeName: '中文' },
   hi: { nativeName: 'हिन्दी' }
 };

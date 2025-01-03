@@ -9,10 +9,12 @@ import it from './locales/it.json';
 import sv from './locales/sv.json';
 import zh from './locales/zh.json';
 import hi from './locales/hi.json';
+import es from './locales/es.json';
 
 export function loadTranslations() {
   return {
     en: { translation: en },
+    es: { translation: es },
     ru: { translation: ru },
     de: { translation: de },
     fr: { translation: fr },
