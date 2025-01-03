@@ -1,59 +1,59 @@
 {
   "landing": {
     "title": {
-      "meet": "Conheça seu",
-      "employee": "Recepcionista IA 24/7"
+      "meet": "Conheça a Una,",
+      "employee": "a primeira recepcionista digital alimentada por IA"
     },
-    "subtitle": "Transforme a experiência do hóspede & maximize as reservas diretas",
+    "subtitle": "Melhore a experiência dos hóspedes e maximize as reservas diretas",
     "search": {
-      "placeholder": "Procure seu hotel no mapa",
-      "button": "Encontrar meu hotel agora",
-      "processing": "Processando...",
+      "placeholder": "Digite o nome do seu hotel",
+      "button": "Treinar funcionário",
+      "processing": "Pesquisando...",
       "clear": "Limpar seleção"
     },
-    "discover": "Descubra como nosso funcionário IA trabalha",
+    "discover": "Agende uma demonstração e saiba mais sobre as capacidades da Una",
     "loading": {
-      "booking": "Simplifique reservas com precisão IA",
-      "booking_desc": "Una otimiza reservas de quartos e envia confirmações instantâneas por email ou SMS, garantindo uma experiência de reserva perfeita para seus hóspedes.",
-      "assistance": "Assistência personalizada",
-      "assistance_desc": "Una oferece recomendações personalizadas, ajuda os hóspedes a reservar restaurantes e atividades, e fornece informações locais para melhorar sua estadia.",
-      "operations": "Operações hoteleiras integradas",
-      "operations_desc": "Da integração CRM às solicitações de limpeza e manutenção, Una conecta todos os sistemas do hotel para uma operação suave.",
+      "booking": "Simplifique as reservas com tecnologia inteligente",
+      "booking_desc": "A Una otimiza as reservas de quartos e envia confirmações instantâneas por e-mail ou SMS, garantindo um processo conveniente para seus hóspedes.",
+      "assistance": "Suporte personalizado",
+      "assistance_desc": "A Una fornece recomendações personalizadas, ajuda os hóspedes a reservar restaurantes e eventos, e oferece informações sobre atrações locais.",
+      "operations": "Gestão hoteleira completa",
+      "operations_desc": "Da integração com CRM aos pedidos de limpeza e manutenção - a Una unifica todos os sistemas do hotel para uma gestão eficiente.",
       "revenue": "Transforme conversas em receita",
-      "revenue_desc": "Una aumenta as reservas diretas, captura preferências dos hóspedes e gera receita através de marketing personalizado e processos de reserva simplificados."
+      "revenue_desc": "A Una aumenta as reservas diretas, coleta preferências dos hóspedes e impulsiona a receita através de marketing personalizado e processo de reserva otimizado."
     },
     "setup": {
-      "ready": "Seu funcionário IA está quase pronto para melhorar a experiência dos hóspedes!",
-      "service": "Apenas alguns passos para o serviço 24/7!",
-      "interactions": "Você está prestes a desbloquear interações personalizadas que realmente impressionam.",
-      "support": "Seus hóspedes apreciarão o suporte instantâneo do seu funcionário!",
-      "satisfaction": "Passo a passo, você está caminhando para a satisfação máxima dos hóspedes.",
-      "bookings": "Quase lá – prepare-se para otimizar reservas diretas.",
-      "excellence": "Este último passo o aproxima da excelência operacional baseada em IA."
+      "ready": "Sua gerente de recepção virtual está quase pronta para melhorar o atendimento aos hóspedes!",
+      "service": "Apenas alguns passos para lançar o serviço 24/7!",
+      "interactions": "Você está a caminho de um impressionante serviço personalizado.",
+      "support": "Seus hóspedes vão adorar o suporte instantâneo da recepção!",
+      "satisfaction": "Passo a passo em direção ao aumento da satisfação dos hóspedes.",
+      "bookings": "Quase lá - Avançando para a otimização de reservas diretas.",
+      "excellence": "Último passo em direção à gestão hoteleira inovadora."
     }
   },
   "contact": {
-    "title": "Teste seu recepcionista IA",
+    "title": "Teste sua gerente de recepção virtual",
     "name": "Digite seu nome",
-    "email": "Digite seu email",
+    "email": "Digite seu e-mail",
     "phone": "Digite seu número de telefone",
     "terms": {
-      "text": "Ao clicar em \"Começar teste\" você concorda com os",
+      "text": "Ao clicar em \"Iniciar teste\" você concorda com os",
       "service": "Termos de serviço",
-      "and": "e",
+      "and": "e a",
       "privacy": "Política de privacidade"
     },
     "button": {
       "loading": "Configurando...",
-      "start": "Começar teste"
+      "start": "Iniciar teste"
     }
   },
   "property": {
     "status": {
-      "ai": "Status IA",
+      "ai": "Status do sistema",
       "ready": "Pronto",
       "parsing": "Analisando...",
-      "response": "Resposta IA",
+      "response": "Tempo de resposta",
       "availability": "Disponibilidade",
       "time": "~1 seg",
       "hours": "24/7"
@@ -63,16 +63,16 @@
     }
   },
   "call": {
-    "title": "Seu recepcionista IA",
-    "ready": "Está pronto",
+    "title": "Sua gerente de recepção virtual",
+    "ready": "está pronta",
     "subtitle": "Ligue agora para iniciar a conversa",
     "button": {
       "call": "Ligar",
-      "end": "Encerrar"
+      "end": "Encerrar chamada"
     },
     "error": {
-      "load": "Falha ao carregar funcionalidades de chamada. Tente novamente mais tarde.",
-      "init": "Falha ao inicializar sistema de chamada"
+      "load": "Falha ao carregar o sistema de comunicação. Por favor, tente novamente mais tarde.",
+      "init": "Erro na inicialização do sistema de comunicação"
     }
   }
 }

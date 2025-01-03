@@ -1,42 +1,42 @@
 {
   "landing": {
     "title": {
-      "meet": "认识您的24/7",
-      "employee": "前台接待"
+      "meet": "认识 Una，",
+      "employee": "首位人工智能驱动的数字前台接待员"
     },
-    "subtitle": "提升宾客体验 & 最大化直接预订",
+    "subtitle": "提升宾客体验，实现直订收益最大化",
     "search": {
-      "placeholder": "在地图上搜索您的酒店",
-      "button": "查找酒店",
+      "placeholder": "请输入酒店名称",
+      "button": "培训员工",
       "processing": "搜索中...",
       "clear": "清除选择"
     },
-    "discover": "了解我们的AI员工如何工作",
+    "discover": "预约演示，了解更多 Una 的功能",
     "loading": {
-      "booking": "用AI精确简化预订",
-      "booking_desc": "Una优化房间预订并通过电子邮件或短信发送即时确认，为您的客人提供无缝预订体验。",
-      "assistance": "个性化协助",
-      "assistance_desc": "Una提供定制建议，帮助客人预订餐厅和活动，并提供当地信息以改善住宿体验。",
-      "operations": "综合酒店运营",
-      "operations_desc": "从CRM集成到客房清洁和维护请求，Una连接所有酒店系统以实现顺畅运营。",
-      "revenue": "将对话转化为收入",
-      "revenue_desc": "Una通过个性化营销和无缝预订流程增加直接预订，捕捉客人偏好并产生收入。"
+      "booking": "智能科技简化预订流程",
+      "booking_desc": "Una 优化客房预订，通过电子邮件或短信发送即时确认，为宾客提供便捷的预订体验。",
+      "assistance": "个性化服务",
+      "assistance_desc": "Una 提供量身定制的推荐，协助宾客预订餐厅和活动，并提供当地景点信息。",
+      "operations": "全方位酒店管理",
+      "operations_desc": "从 CRM 系统整合到客房服务和维护请求 - Una 统一所有酒店系统，实现高效管理。",
+      "revenue": "对话转化收益",
+      "revenue_desc": "Una 通过个性化营销和优化预订流程，提高直接预订量，收集宾客偏好，提升收益。"
     },
     "setup": {
-      "ready": "您的AI员工即将准备好提升宾客体验！",
-      "service": "距离24/7服务只有几步之遥！",
-      "interactions": "您即将解锁真正令人印象深刻的个性化互动。",
-      "support": "您的客人将会感激您的员工提供的即时支持！",
-      "satisfaction": "一步一步走向最高的客户满意度。",
-      "bookings": "即将完成 – 准备优化直接预订。",
-      "excellence": "最后一步将带您更接近AI驱动的卓越运营。"
+      "ready": "您的虚拟前台经理即将准备就绪，提升宾客服务！",
+      "service": "距离启动全天候服务仅剩几步！",
+      "interactions": "您正在迈向令人印象深刻的个性化服务。",
+      "support": "宾客将享受即时前台支持！",
+      "satisfaction": "逐步提升宾客满意度。",
+      "bookings": "即将完成 - 进入直订优化阶段。",
+      "excellence": "迈向创新酒店管理的最后一步。"
     }
   },
   "contact": {
-    "title": "测试您的AI接待员",
-    "name": "输入您的姓名",
-    "email": "输入您的电子邮箱",
-    "phone": "输入您的电话号码",
+    "title": "测试您的虚拟前台经理",
+    "name": "输入姓名",
+    "email": "输入电子邮箱",
+    "phone": "输入手机号码",
     "terms": {
       "text": "点击\"开始测试\"即表示您同意",
       "service": "服务条款",
@@ -50,12 +50,12 @@
   },
   "property": {
     "status": {
-      "ai": "AI状态",
+      "ai": "系统状态",
       "ready": "就绪",
       "parsing": "分析中...",
-      "response": "AI响应",
+      "response": "响应时间",
       "availability": "可用性",
-      "time": "~1秒",
+      "time": "约1秒",
       "hours": "24/7"
     },
     "description": {
@@ -63,16 +63,16 @@
     }
   },
   "call": {
-    "title": "您的AI接待员",
+    "title": "您的虚拟前台经理",
     "ready": "已就绪",
-    "subtitle": "立即通话开始对话",
+    "subtitle": "立即拨打开始对话",
     "button": {
-      "call": "通话",
-      "end": "结束"
+      "call": "拨打",
+      "end": "结束通话"
     },
     "error": {
-      "load": "无法加载通话功能。请稍后重试。",
-      "init": "通话系统初始化失败"
+      "load": "通讯系统加载失败。请稍后重试。",
+      "init": "通讯系统初始化错误"
     }
   }
 }

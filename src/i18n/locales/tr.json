@@ -1,47 +1,47 @@
 {
   "landing": {
     "title": {
-      "meet": "7/24 Resepsiyon",
-      "employee": "Çalışanınızla Tanışın"
+      "meet": "Una ile tanışın,",
+      "employee": "yapay zeka destekli ilk dijital resepsiyon görevlisi"
     },
-    "subtitle": "Misafir Deneyimini Dönüştürün & Direkt Rezervasyonları Maksimize Edin",
+    "subtitle": "Misafir Deneyimini İyileştirin ve Direkt Rezervasyonları Maksimize Edin",
     "search": {
-      "placeholder": "Haritada otelinizi arayın",
-      "button": "Otelimi şimdi bul",
-      "processing": "İşleniyor...",
+      "placeholder": "Otelinizin adını girin",
+      "button": "Çalışanı eğit",
+      "processing": "Aranıyor...",
       "clear": "Seçimi temizle"
     },
-    "discover": "AI çalışanımızın nasıl çalıştığını keşfedin",
+    "discover": "Demo randevusu alın ve Una'nın yapabileceklerini öğrenin",
     "loading": {
-      "booking": "AI hassasiyetiyle rezervasyonları basitleştirin",
-      "booking_desc": "Una oda rezervasyonlarını optimize eder ve misafirlerinize sorunsuz bir rezervasyon deneyimi için anında e-posta veya SMS onayları gönderir.",
-      "assistance": "Kişiselleştirilmiş yardım",
-      "assistance_desc": "Una kişiselleştirilmiş öneriler sunar, misafirlere restoran ve aktivite rezervasyonlarında yardımcı olur ve konaklamalarını iyileştirmek için yerel bilgiler sağlar.",
-      "operations": "Entegre otel operasyonları",
-      "operations_desc": "CRM entegrasyonundan temizlik ve bakım taleplerine kadar, Una sorunsuz operasyon yönetimi için tüm otel sistemlerini birbirine bağlar.",
-      "revenue": "Konuşmaları gelire dönüştürün",
-      "revenue_desc": "Una direkt rezervasyonları artırır, misafir tercihlerini yakalar ve kişiselleştirilmiş pazarlama ve sorunsuz rezervasyon süreçleri ile gelir elde eder."
+      "booking": "Akıllı teknoloji ile rezervasyonu kolaylaştırın",
+      "booking_desc": "Una, oda rezervasyonlarını optimize eder ve misafirleriniz için kullanışlı bir süreç sağlayarak e-posta veya SMS yoluyla anında onay gönderir.",
+      "assistance": "Kişiselleştirilmiş destek",
+      "assistance_desc": "Una, özel tavsiyeler sunar, misafirlerin restoran ve etkinlik rezervasyonları yapmalarına yardımcı olur ve yerel cazibe merkezleri hakkında bilgi sağlar.",
+      "operations": "Kapsamlı otel yönetimi",
+      "operations_desc": "CRM entegrasyonundan kat hizmetleri ve bakım taleplerine kadar - Una, verimli yönetim için tüm otel sistemlerini birleştirir.",
+      "revenue": "Görüşmeleri gelire dönüştürün",
+      "revenue_desc": "Una, kişiselleştirilmiş pazarlama ve optimize edilmiş rezervasyon süreci sayesinde direkt rezervasyonları artırır, misafir tercihlerini toplar ve geliri yükseltir."
     },
     "setup": {
-      "ready": "AI çalışanınız misafir deneyimini iyileştirmeye hazır!",
-      "service": "7/24 hizmete sadece birkaç adım kaldı!",
-      "interactions": "Gerçekten etkileyici kişiselleştirilmiş etkileşimleri açmak üzeresiniz.",
-      "support": "Misafirleriniz çalışanınızın anında desteğini takdir edecek!",
-      "satisfaction": "Adım adım en yüksek misafir memnuniyetine doğru ilerliyorsunuz.",
-      "bookings": "Neredeyse hazır – direkt rezervasyonları optimize etmeye hazırlanın.",
-      "excellence": "Bu son adım sizi AI destekli operasyonel mükemmelliğe yaklaştırıyor."
+      "ready": "Sanal resepsiyon yöneticiniz misafir hizmetlerini iyileştirmeye neredeyse hazır!",
+      "service": "7/24 hizmeti başlatmaya sadece birkaç adım kaldı!",
+      "interactions": "Etkileyici kişiselleştirilmiş hizmete doğru ilerliyorsunuz.",
+      "support": "Misafirleriniz anında resepsiyon desteğini takdir edecek!",
+      "satisfaction": "Misafir memnuniyetini artırmaya adım adım.",
+      "bookings": "Neredeyse hazır - Direkt rezervasyon optimizasyonuna geçiyoruz.",
+      "excellence": "Yenilikçi otel yönetimine doğru son adım."
     }
   },
   "contact": {
-    "title": "AI Resepsiyon Çalışanınızı Test Edin",
+    "title": "Sanal resepsiyon yöneticinizi test edin",
     "name": "Adınızı girin",
     "email": "E-posta adresinizi girin",
     "phone": "Telefon numaranızı girin",
     "terms": {
       "text": "\"Testi başlat\" düğmesine tıklayarak",
-      "service": "Hizmet Şartları",
+      "service": "Hizmet Koşulları",
       "and": "ve",
-      "privacy": "Gizlilik Politikası"
+      "privacy": "Gizlilik Politikasını kabul etmiş olursunuz"
     },
     "button": {
       "loading": "Ayarlanıyor...",
@@ -50,29 +50,29 @@
   },
   "property": {
     "status": {
-      "ai": "AI Durumu",
+      "ai": "Sistem durumu",
       "ready": "Hazır",
-      "parsing": "İşleniyor...",
-      "response": "AI Yanıtı",
+      "parsing": "Analiz ediliyor...",
+      "response": "Yanıt süresi",
       "availability": "Kullanılabilirlik",
       "time": "~1 sn",
-      "hours": "24/7"
+      "hours": "7/24"
     },
     "description": {
       "loading": "Açıklama yükleniyor..."
     }
   },
   "call": {
-    "title": "AI Resepsiyon Çalışanınız",
-    "ready": "Hazır",
-    "subtitle": "Görüşmeye başlamak için şimdi arayın",
+    "title": "Sanal resepsiyon yöneticiniz",
+    "ready": "hazır",
+    "subtitle": "Görüşmeyi başlatmak için şimdi arayın",
     "button": {
       "call": "Ara",
-      "end": "Bitir"
+      "end": "Aramayı sonlandır"
     },
     "error": {
-      "load": "Arama özellikleri yüklenemedi. Lütfen daha sonra tekrar deneyin.",
-      "init": "Arama sistemi başlatılamadı"
+      "load": "İletişim sistemi yüklenemedi. Lütfen daha sonra tekrar deneyin.",
+      "init": "İletişim sistemi başlatma hatası"
     }
   }
 }

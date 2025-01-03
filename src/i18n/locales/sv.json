@@ -1,41 +1,41 @@
 {
   "landing": {
     "title": {
-      "meet": "Möt din 24/7",
-      "employee": "receptionist"
+      "meet": "Möt Una,",
+      "employee": "den första digitala receptionisten som drivs av AI"
     },
-    "subtitle": "Förbättra gästupplevelsen & maximera direktbokningar",
+    "subtitle": "Förbättra gästupplevelsen och maximera direktbokningar",
     "search": {
-      "placeholder": "Sök ditt hotell på kartan",
-      "button": "Hitta hotell",
+      "placeholder": "Ange namnet på ditt hotell",
+      "button": "Träna medarbetare",
       "processing": "Söker...",
       "clear": "Rensa val"
     },
-    "discover": "Upptäck hur vår AI-medarbetare fungerar",
+    "discover": "Boka en demo och lär dig mer om vad Una kan göra",
     "loading": {
-      "booking": "Förenkla bokningar med AI-precision",
-      "booking_desc": "Una optimerar rumsbokningar och skickar direkta bekräftelser via e-post eller SMS för en smidig bokningsupplevelse för dina gäster.",
-      "assistance": "Personlig assistans",
-      "assistance_desc": "Una erbjuder skräddarsydda rekommendationer, hjälper gäster att boka restauranger och aktiviteter, och ger lokal information för en bättre vistelse.",
-      "operations": "Integrerad hotelldrift",
-      "operations_desc": "Från CRM-integration till städning och underhållsförfrågningar kopplar Una samman alla hotellsystem för smidig drift.",
+      "booking": "Förenkla bokningar med smart teknik",
+      "booking_desc": "Una optimerar rumsbokningar och skickar direkta bekräftelser via e-post eller SMS, vilket säkerställer en smidig process för dina gäster.",
+      "assistance": "Personlig support",
+      "assistance_desc": "Una ger skräddarsydda rekommendationer, hjälper gäster att boka restauranger och evenemang, samt erbjuder information om lokala sevärdheter.",
+      "operations": "Omfattande hotellhantering",
+      "operations_desc": "Från CRM-integration till städning och underhållsförfrågningar - Una förenar alla hotellsystem för effektiv hantering.",
       "revenue": "Omvandla konversationer till intäkter",
-      "revenue_desc": "Una ökar direktbokningar, fångar gästpreferenser och genererar intäkter genom personaliserad marknadsföring och smidiga bokningsprocesser."
+      "revenue_desc": "Una ökar direktbokningar, samlar in gästpreferenser och ökar intäkterna genom personaliserad marknadsföring och optimerad bokningsprocess."
     },
     "setup": {
-      "ready": "Din AI-medarbetare är nästan redo att förbättra gästupplevelsen!",
-      "service": "Bara några steg kvar till 24/7-service!",
-      "interactions": "Du är på väg att låsa upp personliga interaktioner som verkligen imponerar.",
-      "support": "Dina gäster kommer att uppskatta omedelbart stöd från din medarbetare!",
-      "satisfaction": "Steg för steg mot högsta gästnöjdhet.",
-      "bookings": "Nästan klart – förbered dig på att optimera direktbokningar.",
-      "excellence": "Detta sista steg tar dig närmare AI-driven operativ excellens."
+      "ready": "Din virtuella receptionschef är nästan redo att förbättra gästservicen!",
+      "service": "Bara några steg kvar till lanseringen av dygnet runt-service!",
+      "interactions": "Du är på väg mot imponerande personlig service.",
+      "support": "Dina gäster kommer att uppskatta omedelbar receptionssupport!",
+      "satisfaction": "Steg för steg mot ökad gästnöjdhet.",
+      "bookings": "Nästan klart - går vidare till optimering av direktbokningar.",
+      "excellence": "Sista steget mot innovativ hotellhantering."
     }
   },
   "contact": {
-    "title": "Testa din AI-receptionist",
+    "title": "Testa din virtuella receptionschef",
     "name": "Ange ditt namn",
-    "email": "Ange din e-post",
+    "email": "Ange din e-postadress",
     "phone": "Ange ditt telefonnummer",
     "terms": {
       "text": "Genom att klicka på \"Starta test\" godkänner du",
@@ -50,10 +50,10 @@
   },
   "property": {
     "status": {
-      "ai": "AI-status",
+      "ai": "Systemstatus",
       "ready": "Redo",
       "parsing": "Analyserar...",
-      "response": "AI-svar",
+      "response": "Svarstid",
       "availability": "Tillgänglighet",
       "time": "~1 sek",
       "hours": "24/7"
@@ -63,16 +63,16 @@
     }
   },
   "call": {
-    "title": "Din AI-receptionist",
+    "title": "Din virtuella receptionschef",
     "ready": "är redo",
     "subtitle": "Ring nu för att starta konversationen",
     "button": {
       "call": "Ring",
-      "end": "Avsluta"
+      "end": "Avsluta samtal"
     },
     "error": {
-      "load": "Det gick inte att ladda samtalsfunktioner. Försök igen senare.",
-      "init": "Det gick inte att initiera samtalssystemet"
+      "load": "Det gick inte att ladda kommunikationssystemet. Försök igen senare.",
+      "init": "Fel vid initiering av kommunikationssystemet"
     }
   }
 }

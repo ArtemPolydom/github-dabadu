@@ -1,59 +1,59 @@
 {
   "landing": {
     "title": {
-      "meet": "Rencontrez votre",
-      "employee": "Réceptionniste IA 24/7"
+      "meet": "Découvrez Una,",
+      "employee": "la première réceptionniste numérique alimentée par l'IA"
     },
-    "subtitle": "Transformez l'expérience client & maximisez les réservations directes",
+    "subtitle": "Améliorez l'expérience client et maximisez les réservations directes",
     "search": {
-      "placeholder": "Recherchez votre hôtel sur la carte",
-      "button": "Trouver mon hôtel maintenant",
-      "processing": "Traitement...",
+      "placeholder": "Saisissez le nom de votre hôtel",
+      "button": "Former l'employé",
+      "processing": "Recherche en cours...",
       "clear": "Effacer la sélection"
     },
-    "discover": "Découvrez comment fonctionne notre employé IA",
+    "discover": "Réservez une démo et découvrez les capacités d'Una",
     "loading": {
-      "booking": "Simplifiez les réservations avec la précision de l'IA",
-      "booking_desc": "Una optimise les réservations de chambres et envoie des confirmations instantanées par email ou SMS, assurant une expérience de réservation fluide pour vos clients.",
+      "booking": "Simplifiez les réservations grâce à la technologie intelligente",
+      "booking_desc": "Una optimise les réservations de chambres et envoie des confirmations instantanées par e-mail ou SMS, garantissant un processus pratique pour vos clients.",
       "assistance": "Assistance personnalisée",
-      "assistance_desc": "Una offre des recommandations personnalisées, aide les clients à réserver restaurants et activités, et fournit des informations locales pour améliorer leur séjour.",
-      "operations": "Opérations hôtelières intégrées",
-      "operations_desc": "De l'intégration CRM aux demandes de ménage et de maintenance, Una connecte tous les systèmes hôteliers pour une gestion fluide.",
+      "assistance_desc": "Una fournit des recommandations sur mesure, aide les clients à réserver restaurants et événements, et propose des informations sur les attractions locales.",
+      "operations": "Gestion hôtelière complète",
+      "operations_desc": "De l'intégration CRM aux demandes de ménage et d'entretien - Una unifie tous les systèmes hôteliers pour une gestion efficace.",
       "revenue": "Transformez les conversations en revenus",
-      "revenue_desc": "Una augmente les réservations directes, capture les préférences des clients et génère des revenus grâce au marketing personnalisé et aux processus de réservation fluides."
+      "revenue_desc": "Una augmente les réservations directes, collecte les préférences des clients et booste les revenus grâce au marketing personnalisé et à un processus de réservation optimisé."
     },
     "setup": {
-      "ready": "Votre employé IA est presque prêt à améliorer l'expérience client !",
-      "service": "Plus que quelques étapes avant un service 24/7 !",
-      "interactions": "Vous êtes sur le point de débloquer des interactions personnalisées vraiment impressionnantes.",
-      "support": "Vos clients apprécieront le support instantané de votre employé !",
-      "satisfaction": "Pas à pas, vous progressez vers une satisfaction client optimale.",
-      "bookings": "Presque terminé – préparez-vous à optimiser les réservations directes.",
-      "excellence": "Cette dernière étape vous rapproche de l'excellence opérationnelle basée sur l'IA."
+      "ready": "Votre responsable de réception virtuelle est presque prête à améliorer le service client !",
+      "service": "Plus que quelques étapes avant le lancement du service 24/7 !",
+      "interactions": "Vous êtes en route vers un service personnalisé impressionnant.",
+      "support": "Vos clients apprécieront l'assistance instantanée à la réception !",
+      "satisfaction": "Étape par étape vers une satisfaction client accrue.",
+      "bookings": "Presque terminé - Passage à l'optimisation des réservations directes.",
+      "excellence": "Dernière étape vers une gestion hôtelière innovante."
     }
   },
   "contact": {
-    "title": "Testez votre réceptionniste IA",
+    "title": "Testez votre responsable de réception virtuelle",
     "name": "Entrez votre nom",
-    "email": "Entrez votre email",
+    "email": "Entrez votre e-mail",
     "phone": "Entrez votre numéro de téléphone",
     "terms": {
-      "text": "En cliquant sur \"Commencer le test\" vous acceptez les",
+      "text": "En cliquant sur « Commencer le test », vous acceptez les",
       "service": "Conditions d'utilisation",
       "and": "et la",
       "privacy": "Politique de confidentialité"
     },
     "button": {
-      "loading": "Configuration...",
+      "loading": "Configuration en cours...",
       "start": "Commencer le test"
     }
   },
   "property": {
     "status": {
-      "ai": "Statut IA",
+      "ai": "État du système",
       "ready": "Prêt",
-      "parsing": "Analyse...",
-      "response": "Réponse IA",
+      "parsing": "Analyse en cours...",
+      "response": "Temps de réponse",
       "availability": "Disponibilité",
       "time": "~1 sec",
       "hours": "24/7"
@@ -63,16 +63,16 @@
     }
   },
   "call": {
-    "title": "Votre réceptionniste IA",
-    "ready": "Est prêt",
+    "title": "Votre responsable de réception virtuelle",
+    "ready": "est prête",
     "subtitle": "Appelez maintenant pour commencer la conversation",
     "button": {
       "call": "Appeler",
-      "end": "Terminer"
+      "end": "Terminer l'appel"
     },
     "error": {
-      "load": "Échec du chargement des fonctionnalités d'appel. Veuillez réessayer plus tard.",
-      "init": "Échec de l'initialisation du système d'appel"
+      "load": "Échec du chargement du système de communication. Veuillez réessayer plus tard.",
+      "init": "Erreur d'initialisation du système de communication"
     }
   }
 }

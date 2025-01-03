@@ -8,6 +8,7 @@ import tr from './locales/tr.json';
 import it from './locales/it.json';
 import sv from './locales/sv.json';
 import zh from './locales/zh.json';
+import hi from './locales/hi.json';
 
 export function loadTranslations() {
   return {
@@ -20,6 +21,7 @@ export function loadTranslations() {
     tr: { translation: tr },
     it: { translation: it },
     sv: { translation: sv },
-    zh: { translation: zh }
+    zh: { translation: zh },
+    hi: { translation: hi }
   };
 }

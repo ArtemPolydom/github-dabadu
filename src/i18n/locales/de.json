@@ -1,78 +1,78 @@
 {
   "landing": {
     "title": {
-      "meet": "Treffen Sie Ihren 24/7",
-      "employee": "KI-Rezeptionsmitarbeiter"
+      "meet": "Lernen Sie Una kennen,",
+      "employee": "die erste KI-gesteuerte digitale Rezeptionistin"
     },
     "subtitle": "Verbessern Sie das Gästeerlebnis & maximieren Sie Direktbuchungen",
     "search": {
-      "placeholder": "Suchen Sie Ihr Hotel auf der Karte",
-      "button": "Mein Hotel jetzt finden",
-      "processing": "Verarbeitung...",
+      "placeholder": "Geben Sie den Namen Ihres Hotels ein",
+      "button": "Mitarbeiter trainieren",
+      "processing": "Suche läuft...",
       "clear": "Auswahl löschen"
     },
-    "discover": "Entdecken Sie, wie unser KI-Mitarbeiter arbeitet",
+    "discover": "Buchen Sie eine Demo und erfahren Sie mehr über Unas Möglichkeiten",
     "loading": {
-      "booking": "Vereinfachen Sie Buchungen mit KI-Präzision",
-      "booking_desc": "Una optimiert Zimmerbuchungen und sendet sofortige Bestätigungen per E-Mail oder SMS für ein nahtloses Buchungserlebnis Ihrer Gäste.",
-      "assistance": "Personalisierte Mitarbeiterunterstützung",
-      "assistance_desc": "Una bietet maßgeschneiderte Empfehlungen, hilft Gästen bei der Buchung von Restaurants und Aktivitäten und liefert lokale Einblicke für einen besseren Aufenthalt.",
-      "operations": "Integrierter Hotelbetrieb",
-      "operations_desc": "Von CRM-Integration bis hin zu Housekeeping- und Wartungsanfragen verbindet Una alle Hotelsysteme für einen reibungslosen Betrieb.",
+      "booking": "Vereinfachen Sie Buchungen mit intelligenter Technologie",
+      "booking_desc": "Una optimiert Zimmerbuchungen und sendet sofortige Bestätigungen per E-Mail oder SMS, um einen bequemen Prozess für Ihre Gäste zu gewährleisten.",
+      "assistance": "Personalisierte Unterstützung",
+      "assistance_desc": "Una bietet maßgeschneiderte Empfehlungen, hilft Gästen bei Restaurant- und Veranstaltungsbuchungen und informiert über lokale Sehenswürdigkeiten.",
+      "operations": "Umfassendes Hotelmanagement",
+      "operations_desc": "Von CRM-Integration bis hin zu Housekeeping- und Wartungsanfragen - Una vereint alle Hotelsysteme für ein effizientes Management.",
       "revenue": "Verwandeln Sie Gespräche in Umsatz",
-      "revenue_desc": "Una steigert Direktbuchungen, erfasst Gästepräferenzen und generiert Umsatz durch personalisiertes Marketing und nahtlose Buchungsprozesse."
+      "revenue_desc": "Una steigert Direktbuchungen, erfasst Gästepräferenzen und erhöht den Umsatz durch personalisiertes Marketing und optimierte Buchungsprozesse."
     },
     "setup": {
-      "ready": "Ihr KI-Mitarbeiter ist fast bereit, das Gästeerlebnis zu verbessern!",
-      "service": "Nur noch wenige Schritte bis zum 24/7-Service!",
-      "interactions": "Sie sind dabei, personalisierte Interaktionen freizuschalten, die wirklich beeindrucken.",
-      "support": "Ihre Gäste werden die sofortige Unterstützung Ihres Mitarbeiters zu schätzen wissen!",
-      "satisfaction": "Schritt für Schritt bewegen Sie sich in Richtung höchster Gästezufriedenheit.",
-      "bookings": "Fast geschafft – bereiten Sie sich darauf vor, Direktbuchungen zu optimieren.",
-      "excellence": "Dieser letzte Schritt bringt Sie näher an KI-gesteuerte betriebliche Exzellenz."
+      "ready": "Ihre virtuelle Rezeptionsleitung ist fast bereit, den Gästeservice zu verbessern!",
+      "service": "Nur noch wenige Schritte bis zum Start des 24/7-Service!",
+      "interactions": "Sie sind auf dem Weg zu beeindruckendem, personalisiertem Service.",
+      "support": "Ihre Gäste werden die sofortige Rezeptionsunterstützung schätzen!",
+      "satisfaction": "Schritt für Schritt zur Steigerung der Gästezufriedenheit.",
+      "bookings": "Fast geschafft - Optimierung der Direktbuchungen steht bevor.",
+      "excellence": "Letzter Schritt zum innovativen Hotelmanagement."
     }
   },
   "contact": {
-    "title": "Testen Sie Ihren KI-Rezeptionsmitarbeiter",
+    "title": "Testen Sie Ihre virtuelle Rezeptionsleitung",
     "name": "Geben Sie Ihren Namen ein",
-    "email": "Geben Sie Ihre E-Mail ein",
+    "email": "Geben Sie Ihre E-Mail-Adresse ein",
     "phone": "Geben Sie Ihre Telefonnummer ein",
     "terms": {
-      "text": "Durch Klicken auf \"Test starten\" stimmen Sie zu den",
+      "text": "Durch Klicken auf \"Test starten\" stimmen Sie den",
       "service": "Nutzungsbedingungen",
       "and": "und der",
-      "privacy": "Datenschutzerklärung"
+      "privacy": "Datenschutzerklärung zu"
     },
     "button": {
-      "loading": "Einrichtung...",
+      "loading": "Einrichtung läuft...",
       "start": "Test starten"
     }
   },
   "property": {
     "status": {
-      "ai": "KI-Status",
+      "ai": "Systemstatus",
       "ready": "Bereit",
-      "parsing": "Analysiere...",
-      "response": "KI-Antwort",
+      "parsing": "Analyse läuft...",
+      "response": "Reaktionszeit",
       "availability": "Verfügbarkeit",
-      "time": "~1 Sek",
+      "time": "~1 Sek.",
       "hours": "24/7"
     },
     "description": {
-      "loading": "Lade Objektbeschreibung..."
+      "loading": "Beschreibung wird geladen..."
     }
   },
   "call": {
-    "title": "Ihr KI-Rezeptionsmitarbeiter",
-    "ready": "Ist bereit",
-    "subtitle": "Jetzt anrufen, um das Gespräch zu beginnen",
+    "title": "Ihre virtuelle Rezeptionsleitung",
+    "ready": "ist bereit",
+    "subtitle": "Rufen Sie jetzt an, um das Gespräch zu beginnen",
     "button": {
       "call": "Anrufen",
-      "end": "Beenden"
+      "end": "Anruf beenden"
     },
     "error": {
-      "load": "Fehler beim Laden der Anruffunktionen. Bitte versuchen Sie es später erneut.",
-      "init": "Fehler beim Initialisieren des Anrufsystems"
+      "load": "Kommunikationssystem konnte nicht geladen werden. Bitte versuchen Sie es später erneut.",
+      "init": "Fehler bei der Initialisierung des Kommunikationssystems"
     }
   }
 }

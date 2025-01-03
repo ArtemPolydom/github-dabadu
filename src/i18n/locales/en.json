@@ -1,17 +1,17 @@
 {
   "landing": {
     "title": {
-      "meet": "Meet Your 24/7",
-      "employee": "Virtual Front Desk Manager"
+      "meet": "Talk to Una,",
+      "employee": "the first digital front desk agent powered by AI"
     },
     "subtitle": "Enhance Guest Experience & Maximize Direct Bookings",
     "search": {
-      "placeholder": "Find Your Hotel on the Map",
-      "button": "Find Hotel",
+      "placeholder": "Enter the name of your hotel",
+      "button": "Train employee",
       "processing": "Searching...",
       "clear": "Clear Selection"
     },
-    "discover": "Discover Virtual Front Desk Manager Capabilities",
+    "discover": "Book a demo and learn more about what Una can do",
     "loading": {
       "booking": "Simplify Booking with Smart Technology",
       "booking_desc": "Una optimizes room bookings and sends instant confirmations via email or SMS, ensuring a convenient process for your guests.",

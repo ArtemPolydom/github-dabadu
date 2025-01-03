@@ -1,39 +1,39 @@
 {
   "landing": {
     "title": {
-      "meet": "Incontra il tuo",
-      "employee": "Receptionist IA 24/7"
+      "meet": "Incontra Una,",
+      "employee": "la prima receptionist digitale alimentata dall'IA"
     },
-    "subtitle": "Trasforma l'esperienza degli ospiti & massimizza le prenotazioni dirette",
+    "subtitle": "Migliora l'esperienza degli ospiti e massimizza le prenotazioni dirette",
     "search": {
-      "placeholder": "Cerca il tuo hotel sulla mappa",
-      "button": "Trova il mio hotel ora",
-      "processing": "Elaborazione...",
+      "placeholder": "Inserisci il nome del tuo hotel",
+      "button": "Forma dipendente",
+      "processing": "Ricerca in corso...",
       "clear": "Cancella selezione"
     },
-    "discover": "Scopri come funziona il nostro dipendente IA",
+    "discover": "Prenota una demo e scopri di più sulle capacità di Una",
     "loading": {
-      "booking": "Semplifica le prenotazioni con la precisione dell'IA",
-      "booking_desc": "Una ottimizza le prenotazioni delle camere e invia conferme istantanee via email o SMS, garantendo un'esperienza di prenotazione fluida per i tuoi ospiti.",
+      "booking": "Semplifica le prenotazioni con la tecnologia intelligente",
+      "booking_desc": "Una ottimizza le prenotazioni delle camere e invia conferme istantanee via email o SMS, garantendo un processo conveniente per i tuoi ospiti.",
       "assistance": "Assistenza personalizzata",
-      "assistance_desc": "Una offre raccomandazioni personalizzate, aiuta gli ospiti a prenotare ristoranti e attività, e fornisce informazioni locali per migliorare il loro soggiorno.",
-      "operations": "Operazioni alberghiere integrate",
-      "operations_desc": "Dall'integrazione CRM alle richieste di pulizia e manutenzione, Una collega tutti i sistemi dell'hotel per una gestione fluida.",
+      "assistance_desc": "Una fornisce raccomandazioni su misura, aiuta gli ospiti a prenotare ristoranti ed eventi, e offre informazioni sulle attrazioni locali.",
+      "operations": "Gestione alberghiera completa",
+      "operations_desc": "Dall'integrazione CRM alle richieste di pulizia e manutenzione - Una unifica tutti i sistemi dell'hotel per una gestione efficiente.",
       "revenue": "Trasforma le conversazioni in ricavi",
-      "revenue_desc": "Una aumenta le prenotazioni dirette, cattura le preferenze degli ospiti e genera ricavi attraverso il marketing personalizzato e processi di prenotazione fluidi."
+      "revenue_desc": "Una aumenta le prenotazioni dirette, raccoglie le preferenze degli ospiti e incrementa i ricavi attraverso il marketing personalizzato e un processo di prenotazione ottimizzato."
     },
     "setup": {
-      "ready": "Il tuo dipendente IA è quasi pronto a migliorare l'esperienza degli ospiti!",
-      "service": "Solo pochi passi dal servizio 24/7!",
-      "interactions": "Stai per sbloccare interazioni personalizzate davvero impressionanti.",
-      "support": "I tuoi ospiti apprezzeranno il supporto istantaneo del tuo dipendente!",
-      "satisfaction": "Passo dopo passo, ti stai muovendo verso la massima soddisfazione degli ospiti.",
-      "bookings": "Quasi fatto – preparati a ottimizzare le prenotazioni dirette.",
-      "excellence": "Quest'ultimo passo ti avvicina all'eccellenza operativa basata sull'IA."
+      "ready": "Il tuo responsabile reception virtuale è quasi pronto a migliorare il servizio ospiti!",
+      "service": "Solo pochi passi al lancio del servizio 24/7!",
+      "interactions": "Sei sulla strada per un impressionante servizio personalizzato.",
+      "support": "I tuoi ospiti apprezzeranno l'assistenza immediata della reception!",
+      "satisfaction": "Passo dopo passo verso una maggiore soddisfazione degli ospiti.",
+      "bookings": "Quasi fatto - Passiamo all'ottimizzazione delle prenotazioni dirette.",
+      "excellence": "Ultimo passo verso una gestione alberghiera innovativa."
     }
   },
   "contact": {
-    "title": "Prova il tuo receptionist IA",
+    "title": "Prova il tuo responsabile reception virtuale",
     "name": "Inserisci il tuo nome",
     "email": "Inserisci la tua email",
     "phone": "Inserisci il tuo numero di telefono",
@@ -41,19 +41,19 @@
       "text": "Cliccando su \"Inizia il test\" accetti i",
       "service": "Termini di servizio",
       "and": "e la",
-      "privacy": "Privacy Policy"
+      "privacy": "Politica sulla privacy"
     },
     "button": {
-      "loading": "Configurazione...",
+      "loading": "Configurazione in corso...",
       "start": "Inizia il test"
     }
   },
   "property": {
     "status": {
-      "ai": "Stato IA",
+      "ai": "Stato del sistema",
       "ready": "Pronto",
-      "parsing": "Analisi...",
-      "response": "Risposta IA",
+      "parsing": "Analisi in corso...",
+      "response": "Tempo di risposta",
       "availability": "Disponibilità",
       "time": "~1 sec",
       "hours": "24/7"
@@ -63,16 +63,16 @@
     }
   },
   "call": {
-    "title": "Il tuo receptionist IA",
-    "ready": "È pronto",
+    "title": "Il tuo responsabile reception virtuale",
+    "ready": "è pronto",
     "subtitle": "Chiama ora per iniziare la conversazione",
     "button": {
       "call": "Chiama",
-      "end": "Termina"
+      "end": "Termina chiamata"
     },
     "error": {
-      "load": "Impossibile caricare le funzionalità di chiamata. Riprova più tardi.",
-      "init": "Impossibile inizializzare il sistema di chiamata"
+      "load": "Impossibile caricare il sistema di comunicazione. Per favore riprova più tardi.",
+      "init": "Errore di inizializzazione del sistema di comunicazione"
     }
   }
 }

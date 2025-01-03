@@ -1,41 +1,41 @@
 {
   "landing": {
     "title": {
-      "meet": "Seznamte se s vaším",
-      "employee": "recepčním 24/7"
+      "meet": "Seznamte se s Unou,",
+      "employee": "první digitální recepční s umělou inteligencí"
     },
-    "subtitle": "Transformujte zážitek hostů & maximalizujte přímé rezervace",
+    "subtitle": "Vylepšete zážitek hostů a maximalizujte přímé rezervace",
     "search": {
-      "placeholder": "Vyhledejte svůj hotel na mapě",
-      "button": "Najít můj hotel nyní",
-      "processing": "Zpracování...",
+      "placeholder": "Zadejte název vašeho hotelu",
+      "button": "Zaškolit zaměstnance",
+      "processing": "Vyhledávání...",
       "clear": "Vymazat výběr"
     },
-    "discover": "Zjistěte, jak náš AI zaměstnanec funguje",
+    "discover": "Rezervujte si demo a zjistěte více o možnostech Uny",
     "loading": {
-      "booking": "Zjednodušte rezervace s AI přesností",
-      "booking_desc": "Una optimalizuje rezervace pokojů a zasílá okamžitá potvrzení e-mailem nebo SMS pro bezproblémový rezervační zážitek vašich hostů.",
-      "assistance": "Personalizovaná asistence",
-      "assistance_desc": "Una nabízí personalizovaná doporučení, pomáhá hostům s rezervací restaurací a aktivit a poskytuje místní informace pro lepší pobyt.",
-      "operations": "Integrovaný hotelový provoz",
-      "operations_desc": "Od CRM integrace po požadavky na úklid a údržbu, Una propojuje všechny hotelové systémy pro plynulý provoz.",
+      "booking": "Zjednodušte rezervace pomocí chytré technologie",
+      "booking_desc": "Una optimalizuje rezervace pokojů a zasílá okamžitá potvrzení e-mailem nebo SMS, což zajišťuje pohodlný proces pro vaše hosty.",
+      "assistance": "Personalizovaná podpora",
+      "assistance_desc": "Una poskytuje individuální doporučení, pomáhá hostům s rezervacemi restaurací a událostí a nabízí informace o místních atrakcích.",
+      "operations": "Komplexní správa hotelu",
+      "operations_desc": "Od integrace CRM po požadavky na úklid a údržbu - Una sjednocuje všechny hotelové systémy pro efektivní správu.",
       "revenue": "Proměňte konverzace v příjmy",
-      "revenue_desc": "Una zvyšuje přímé rezervace, zachycuje preference hostů a generuje příjmy prostřednictvím personalizovaného marketingu a plynulých rezervačních procesů."
+      "revenue_desc": "Una zvyšuje přímé rezervace, sbírá preference hostů a zvyšuje příjmy prostřednictvím personalizovaného marketingu a optimalizovaného procesu rezervací."
     },
     "setup": {
-      "ready": "Váš AI zaměstnanec je téměř připraven zlepšit zážitek hostů!",
-      "service": "Jen několik kroků od 24/7 služby!",
-      "interactions": "Chystáte se odemknout personalizované interakce, které skutečně zaujmou.",
-      "support": "Vaši hosté ocení okamžitou podporu vašeho zaměstnance!",
-      "satisfaction": "Krok za krokem směřujete k nejvyšší spokojenosti hostů.",
-      "bookings": "Téměř hotovo – připravte se na optimalizaci přímých rezervací.",
-      "excellence": "Tento poslední krok vás přibližuje k provozní dokonalosti řízené AI."
+      "ready": "Váš virtuální recepční je téměř připraven vylepšit služby hostům!",
+      "service": "Jen několik kroků od spuštění nepřetržitého servisu!",
+      "interactions": "Jste na cestě k působivým personalizovaným službám.",
+      "support": "Vaši hosté ocení okamžitou podporu recepce!",
+      "satisfaction": "Krok za krokem k vyšší spokojenosti hostů.",
+      "bookings": "Téměř hotovo - přecházíme k optimalizaci přímých rezervací.",
+      "excellence": "Poslední krok k inovativnímu hotelovému managementu."
     }
   },
   "contact": {
-    "title": "Vyzkoušejte svého AI recepčního",
+    "title": "Otestujte svého virtuálního recepčního",
     "name": "Zadejte své jméno",
-    "email": "Zadejte svůj email",
+    "email": "Zadejte svůj e-mail",
     "phone": "Zadejte své telefonní číslo",
     "terms": {
       "text": "Kliknutím na \"Začít testování\" souhlasíte s",
@@ -50,10 +50,10 @@
   },
   "property": {
     "status": {
-      "ai": "AI Status",
-      "ready": "Připraven",
-      "parsing": "Analyzuji...",
-      "response": "AI Odpověď",
+      "ai": "Stav systému",
+      "ready": "Připraveno",
+      "parsing": "Analýza...",
+      "response": "Doba odezvy",
       "availability": "Dostupnost",
       "time": "~1 s",
       "hours": "24/7"
@@ -63,16 +63,16 @@
     }
   },
   "call": {
-    "title": "Váš AI recepční",
-    "ready": "Je připraven",
+    "title": "Váš virtuální recepční",
+    "ready": "je připraven",
     "subtitle": "Zavolejte nyní pro zahájení konverzace",
     "button": {
-      "call": "Volat",
-      "end": "Ukončit"
+      "call": "Zavolat",
+      "end": "Ukončit hovor"
     },
     "error": {
-      "load": "Nepodařilo se načíst funkce volání. Zkuste to prosím později.",
-      "init": "Nepodařilo se inicializovat systém volání"
+      "load": "Nepodařilo se načíst komunikační systém. Prosím zkuste to později.",
+      "init": "Chyba inicializace komunikačního systému"
     }
   }
 }

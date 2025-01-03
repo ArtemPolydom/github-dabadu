@@ -8,5 +8,6 @@ export const languages = {
   tr: { nativeName: 'Türkçe' },
   it: { nativeName: 'Italiano' },
   sv: { nativeName: 'Svenska' },
-  zh: { nativeName: '中文' }
+  zh: { nativeName: '中文' },
+  hi: { nativeName: 'हिन्दी' }
 };

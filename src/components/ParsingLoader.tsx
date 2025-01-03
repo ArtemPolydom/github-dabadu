@@ -6,44 +6,76 @@ interface ParsingLoaderProps {
   progress?: number;
   isSettingUp?: boolean;
   isParsingComplete?: boolean;
+  isLoading?: boolean; // New prop to handle overall loading state
 }
 
 export function ParsingLoader({ 
   progress = 0,
   isSettingUp = false,
-  isParsingComplete = false
+  isParsingComplete = false,
+  isLoading = false
 }: ParsingLoaderProps) {
   const [currentMessage, setCurrentMessage] = useState(0);
+  const [fadeOut, setFadeOut] = useState(false);
   const { t } = useTranslation();
 
   useEffect(() => {
     const messages = isSettingUp ? SETUP_MESSAGES : PARSING_MESSAGES;
     const interval = setInterval(() => {
-      setCurrentMessage((prev) => (prev === messages.length - 1 ? 0 : prev + 1));
+      // Don't change messages if we're about to complete
+      if (!isParsingComplete && isLoading) {
+        setCurrentMessage((prev) => (prev === messages.length - 1 ? 0 : prev + 1));
+      }
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [isSettingUp]);
+  }, [isSettingUp, isParsingComplete, isLoading]);
+
+  // Handle transition when loading completes
+  useEffect(() => {
+    if (!isLoading && isParsingComplete) {
+      setFadeOut(true);
+    } else {
+      setFadeOut(false);
+    }
+  }, [isLoading, isParsingComplete]);
 
   const messages = isSettingUp ? SETUP_MESSAGES : PARSING_MESSAGES;
   const currentMessageData = messages[currentMessage];
-  const displayProgress = isParsingComplete ? 100 : Math.min(95, progress);
+  
+  // Adjust progress display logic
+  const displayProgress = (() => {
+    if (isParsingComplete && isSettingUp) {
+      return 98; // Near complete during setup
+    } else if (isParsingComplete) {
+      return 100; // Complete after parsing
+    } else {
+      return Math.min(95, progress); // Normal progress
+    }
+  })();
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-6 p-8 bg-white/50 backdrop-blur-sm rounded-lg">
+    <div 
+      className={`flex flex-col items-center justify-center space-y-6 p-8 bg-white/50 backdrop-blur-sm rounded-lg transition-opacity duration-300 ${
+        fadeOut ? 'opacity-0' : 'opacity-100'
+      }`}
+    >
       {!isSettingUp && typeof currentMessageData !== 'string' && currentMessageData.icon && (
         <div className="relative">
-          <div className="absolute inset-0 animate-ping">
-            <currentMessageData.icon className="w-12 h-12 text-green-500 opacity-75" />
+          <div className={`absolute inset-0 ${isParsingComplete ? '' : 'animate-ping'}`}>
+            <currentMessageData.icon className="w-12 h-12 text-emerald-500 opacity-75" />
           </div>
-          <currentMessageData.icon className="w-12 h-12 text-green-500 relative" />
+          <currentMessageData.icon className="w-12 h-12 text-emerald-500 relative" />
         </div>
       )}
       
       <div className="w-full max-w-md h-2 bg-gray-100 rounded-full overflow-hidden">
         <div 
-          className="h-full bg-green-500 transition-all duration-300 ease-in-out"
-          style={{ width: `${displayProgress}%` }}
+          className="h-full bg-emerald-500 transition-all duration-300 ease-in-out"
+          style={{ 
+            width: `${displayProgress}%`,
+            transitionTimingFunction: isParsingComplete ? 'ease-out' : 'linear'
+          }}
         />
       </div>
       
