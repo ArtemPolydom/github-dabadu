@@ -10,7 +10,7 @@ declare global {
         places: {
           Autocomplete: new (
             input: HTMLInputElement,
-            opts?: google.maps.places.AutocompleteOptions  // Updated this line
+            opts?: google.maps.places.AutocompleteOptions
           ) => google.maps.places.Autocomplete;
         };
       };
@@ -19,11 +19,11 @@ declare global {
   }
 }
 
-// Add necessary type definitions
 declare namespace google.maps.places {
   interface Autocomplete {
     addListener(eventName: string, handler: () => void): void;
     getPlace(): PlaceResult;
+    unbindAll(): void;
   }
   
   interface AutocompleteOptions {
@@ -52,18 +52,18 @@ export interface PlaceResult {
 }
 
 export function usePlacesAutocomplete() {
-  const [, setAutocomplete] = useState<google.maps.places.Autocomplete | null>(null);
+  const [autocomplete, setAutocomplete] = useState<google.maps.places.Autocomplete | null>(null);
   const [selectedPlace, setSelectedPlace] = useState<PlaceResult | null>(null);
   const [searchInput, setSearchInput] = useState<HTMLInputElement | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const clearSelection = () => {
+  const clearSelection = useCallback(() => {
     setSelectedPlace(null);
     if (searchInput) {
       searchInput.value = '';
       searchInput.removeAttribute('readonly');
     }
-  };
+  }, [searchInput]);
 
   const setupAutocomplete = useCallback(() => {
     const input = document.getElementById('search-input') as HTMLInputElement;
@@ -74,8 +74,7 @@ export function usePlacesAutocomplete() {
     const autocompleteInstance = new window.google.maps.places.Autocomplete(
       input,
       {
-        types: ['lodging'], // This already restricts to hotels/lodging
-        // componentRestrictions: { country: ['us', 'ca'] }, // Restrict to US and Canada
+        types: ['lodging'],
         language: 'en',
         fields: ['name', 'formatted_address', 'address_components', 'geometry'],
       }
@@ -97,12 +96,6 @@ export function usePlacesAutocomplete() {
         (component: any) => component.types.includes('administrative_area_level_1')
       )?.long_name || '';
       
-      // // Verify it's a hotel in US or Canada
-      // if (!['United States', 'Canada'].includes(country)) {
-      //   setError('Please select a hotel in the United States or Canada');
-      //   return;
-      // }
-
       setSelectedPlace({
         name: place.name,
         formatted_address: place.formatted_address,
@@ -114,6 +107,24 @@ export function usePlacesAutocomplete() {
 
     setAutocomplete(autocompleteInstance);
   }, []);
+
+  const resetPlacesAutocomplete = useCallback(() => {
+    if (autocomplete) {
+      // Unbind all event listeners
+      autocomplete.unbindAll();
+    }
+    
+    // Clear the current autocomplete instance
+    setAutocomplete(null);
+    clearSelection();
+
+    // Reinitialize the autocomplete
+    if (window.google?.maps?.places) {
+      setTimeout(() => {
+        setupAutocomplete();
+      }, 0);
+    }
+  }, [autocomplete, clearSelection, setupAutocomplete]);
 
   useEffect(() => {
     if (window.google?.maps?.places) {
@@ -145,7 +156,5 @@ export function usePlacesAutocomplete() {
     };
   }, [setupAutocomplete]);
 
-  return { selectedPlace, error, clearSelection };
-
-  return { selectedPlace };
+  return { selectedPlace, error, clearSelection, resetPlacesAutocomplete };
 }

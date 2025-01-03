@@ -13,7 +13,7 @@ import { ANONYMOUS_USER } from '@/lib/constants/user';
 
 export function LandingPage() {
   const { t } = useTranslation();
-  const { selectedPlace, clearSelection } = usePlacesAutocomplete();
+  const { selectedPlace, clearSelection, resetPlacesAutocomplete } = usePlacesAutocomplete();
   const [isParsing, setIsParsing] = useState(false);
   const [isSettingUp, setIsSettingUp] = useState(false);
   const [setupComplete, setSetupComplete] = useState(false);
@@ -125,7 +125,9 @@ export function LandingPage() {
   };
 
   const handleStartAgain = () => {
-    clearSelection?.(); // Use optional chaining
+    // Reset all states to their initial values
+    clearSelection?.();
+    resetPlacesAutocomplete?.();
     setSetupComplete(false);
     setIsParsing(false);
     setIsSettingUp(false);
@@ -136,6 +138,15 @@ export function LandingPage() {
     setErrorContext(null);
     setAgentCreationStarted(false);
     setIsLoading(false);
+
+    // Clear the search input
+    const searchInput = document.getElementById('search-input') as HTMLInputElement;
+    if (searchInput) {
+      searchInput.value = '';
+    }
+
+    // Reset focus to the search input for better UX
+    searchInput?.focus();
   };
 
   const handleBookDemo = () => {
