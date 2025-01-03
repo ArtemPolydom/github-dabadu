@@ -13,9 +13,8 @@ import { ANONYMOUS_USER } from '@/lib/constants/user';
 
 export function LandingPage() {
   const { t } = useTranslation();
-  const { selectedPlace, error, clearSelection } = usePlacesAutocomplete();
+  const { selectedPlace, clearSelection } = usePlacesAutocomplete();
   const [isParsing, setIsParsing] = useState(false);
-  const [hasStartedParsing, setHasStartedParsing] = useState(false);
   const [isSettingUp, setIsSettingUp] = useState(false);
   const [setupComplete, setSetupComplete] = useState(false);
   const [parsingProgress, setParsingProgress] = useState(0);
@@ -85,7 +84,6 @@ export function LandingPage() {
     setProcessingError(false);
     setErrorContext(null);
     setParsingProgress(0);
-    setHasStartedParsing(true);
     setIsParsing(true);
     setParserResult(null);
     setAgentCreationStarted(false);
