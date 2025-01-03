@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Search, Loader2, X } from 'lucide-react';
+import { Search, Loader2, X, CalendarDays } from 'lucide-react';
 import { usePlacesAutocomplete } from '@/hooks/usePlacesAutocomplete';
 import { ParsingLoader } from './ParsingLoader';
 import { createDemoAgent } from '@/lib/api/demoAgent';
@@ -124,6 +124,24 @@ export function LandingPage() {
     }
   };
 
+  const handleStartAgain = () => {
+    clearSelection();
+    setSetupComplete(false);
+    setIsParsing(false);
+    setIsSettingUp(false);
+    setParsingProgress(0);
+    setParserResult(null);
+    setAgentId('');
+    setProcessingError(false);
+    setErrorContext(null);
+    setAgentCreationStarted(false);
+    setIsLoading(false);
+  };
+
+  const handleBookDemo = () => {
+    window.open('https://cal.com/polydom/30min', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-white pt-4 md:pt-2">
       <div className="flex h-12 md:h-14 items-center justify-between px-4 md:px-6">
@@ -186,13 +204,20 @@ export function LandingPage() {
               )}
             </Button>
 
-            <Button
-              variant="outline"
-              fullWidth
-              onClick={() => window.open('https://cal.com/polydom/30min', '_blank')}
+            <button
+              onClick={handleBookDemo}
+              className="flex flex-col items-center justify-center gap-1 bg-white text-blue-600 py-3 px-6 rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors w-full"
             >
-              {t('landing.discover')}
-            </Button>
+              <div className="flex items-center gap-2">
+                <CalendarDays className="w-5 h-5" />
+                <span className="font-medium">
+                  {t('landing.book.button')}
+                </span>
+              </div>
+              <span className="text-sm text-gray-600">
+                {t('landing.book.learn')}
+              </span>
+            </button>
           </div>
         )}
 
@@ -214,6 +239,7 @@ export function LandingPage() {
               state={selectedPlace.state}
               country={selectedPlace.country}
               agentId={agentId}
+              onStartAgain={handleStartAgain}
             />
           </div>
         )}

@@ -1,5 +1,12 @@
 {
   "landing": {
+    "restart": {
+  "button": "Börja om"
+},
+"book": {
+  "button": "Boka en demo",
+  "learn": "Lär dig mer om vad Una kan göra"
+},    
     "title": {
       "meet": "Möt Una,",
       "employee": "den första digitala receptionisten som drivs av AI"

@@ -1,5 +1,12 @@
 {
   "landing": {
+    "restart": {
+  "button": "Recommencer"
+},
+"book": {
+  "button": "Réserver une démo",
+  "learn": "En savoir plus sur les capacités d'Una"
+},    
     "title": {
       "meet": "Découvrez Una,",
       "employee": "la première réceptionniste numérique alimentée par l'IA"

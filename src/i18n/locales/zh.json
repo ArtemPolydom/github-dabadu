@@ -1,5 +1,12 @@
 {
   "landing": {
+    "restart": {
+  "button": "重新开始"
+},
+"book": {
+  "button": "预约演示",
+  "learn": "了解Una的功能"
+},    
     "title": {
       "meet": "认识 Una，",
       "employee": "首位人工智能驱动的数字前台接待员"

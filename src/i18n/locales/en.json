@@ -1,5 +1,12 @@
 {
   "landing": {
+    "restart": {
+      "button": "Start Again"
+    },
+    "book": {
+      "button": "Book a Demo",
+      "learn": "Learn more about what Una can do"
+    },
     "title": {
       "meet": "Talk to Una,",
       "employee": "the first digital front desk agent powered by AI"

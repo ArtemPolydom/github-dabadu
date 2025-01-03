@@ -1,5 +1,12 @@
 {
   "landing": {
+    "restart": {
+  "button": "Yeniden Başla"
+},
+"book": {
+  "button": "Demo Talep Et",
+  "learn": "Una'nın neler yapabileceği hakkında daha fazla bilgi edinin"
+},    
     "title": {
       "meet": "Una ile tanışın,",
       "employee": "yapay zeka destekli ilk dijital resepsiyon görevlisi"

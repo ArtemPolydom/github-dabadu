@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin, CalendarDays, RotateCcw } from 'lucide-react';
 
 interface AIReceptionistCardProps {
   businessName: string;
   state: string;
   country: string;
   agentId: string;
+  onStartAgain?: () => void;
 }
 
 declare global {
@@ -21,6 +22,7 @@ export function AIReceptionistCard({
   state,
   country,
   agentId,
+  onStartAgain,
 }: AIReceptionistCardProps) {
   const { t, i18n } = useTranslation();
   const [isEnabled, setIsEnabled] = useState(false);
@@ -104,16 +106,10 @@ export function AIReceptionistCard({
     window.addEventListener('polyCallError', handleCallError as EventListener);
 
     return () => {
-      window.removeEventListener(
-        'polyStatus',
-        handlePolyStatus as EventListener
-      );
+      window.removeEventListener('polyStatus', handlePolyStatus as EventListener);
       window.removeEventListener('polyStartCall', handleStartCall);
       window.removeEventListener('polyEndCall', handleEndCall);
-      window.removeEventListener(
-        'polyCallError',
-        handleCallError as EventListener
-      );
+      window.removeEventListener('polyCallError', handleCallError as EventListener);
     };
   }, [t]);
 
@@ -125,6 +121,10 @@ export function AIReceptionistCard({
     } else {
       window.polyCallAPI.makeCall();
     }
+  };
+
+  const handleBookDemo = () => {
+    window.open('https://cal.com/polydom/30min', '_blank');
   };
 
   return (
@@ -144,39 +144,66 @@ export function AIReceptionistCard({
       </h1>
 
       <div className="w-full max-w-md mx-auto bg-white rounded-lg shadow-lg px-8 pb-8">
-        <h2 className="text-2xl font-bold text-center text-gray-900">
+        <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
           {t('call.subtitle')}
         </h2>
 
-        <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-center gap-3">
-              <button
-                onClick={handleCall}
-                disabled={!isEnabled}
-                className={`relative flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300
-                  ${
-                    !isEnabled
-                      ? 'bg-gray-400 cursor-not-allowed opacity-60'
-                      : isCallActive
-                      ? 'bg-red-600 hover:bg-red-700'
-                      : 'bg-emerald-500 hover:bg-emerald-600'
-                  } text-white`}
-              >
-                <Phone className="w-5 h-5" />
-                <span>
-                  {isCallActive ? t('call.button.end') : t('call.button.call')}
-                </span>
-                {isEnabled && !isCallActive && (
-                  <div className="absolute -inset-1 bg-emerald-500/20 rounded-lg animate-pulse" />
-                )}
-              </button>
-            </div>
+        <div className="flex flex-col items-center gap-6">
+          <button
+            onClick={handleCall}
+            disabled={!isEnabled}
+            className={`relative flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-all duration-300 w-full justify-center
+              ${
+                !isEnabled
+                  ? 'bg-gray-400 cursor-not-allowed opacity-60'
+                  : isCallActive
+                  ? 'bg-red-600 hover:bg-red-700'
+                  : 'bg-emerald-500 hover:bg-emerald-600'
+              } text-white text-lg`}
+          >
+            <Phone className="w-6 h-6" />
+            <span>
+              {isCallActive ? t('call.button.end') : t('call.button.call')}
+            </span>
+            {isEnabled && !isCallActive && (
+              <div className="absolute -inset-1 bg-emerald-500/20 rounded-lg animate-pulse" />
+            )}
+          </button>
 
-            {errorMsg && (
-              <div className="text-red-600 font-medium text-center">
-                {errorMsg}
+          {errorMsg && (
+            <div className="text-red-600 font-medium text-center">
+              {errorMsg}
+            </div>
+          )}
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-gray-200">
+          <div className="flex flex-col gap-4">
+            <button
+              onClick={handleBookDemo}
+              className="flex flex-col items-center justify-center gap-1 bg-white text-blue-600 py-3 px-6 rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors w-full"
+            >
+              <div className="flex items-center gap-2">
+                <CalendarDays className="w-5 h-5" />
+                <span className="font-medium">
+                  {t('landing.book.button')}
+                </span>
               </div>
+              <span className="text-sm text-gray-600">
+                {t('landing.book.learn')}
+              </span>
+            </button>
+            
+            {onStartAgain && (
+              <button
+                onClick={onStartAgain}
+                className="flex items-center justify-center gap-2 text-gray-600 py-3 px-6 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
+              >
+                <RotateCcw className="w-5 h-5" />
+                <span>
+                  {t('landing.restart.button')}
+                </span>
+              </button>
             )}
           </div>
         </div>

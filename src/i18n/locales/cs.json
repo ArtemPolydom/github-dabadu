@@ -1,5 +1,12 @@
 {
   "landing": {
+    "restart": {
+  "button": "Začít znovu"
+},
+"book": {
+  "button": "Rezervovat demo",
+  "learn": "Zjistěte více o možnostech Una"
+},    
     "title": {
       "meet": "Seznamte se s Unou,",
       "employee": "první digitální recepční s umělou inteligencí"
