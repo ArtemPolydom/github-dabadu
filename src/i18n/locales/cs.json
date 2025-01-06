@@ -1,5 +1,8 @@
 {
   "landing": {
+      "language": {
+        "block": "Přepínání jazyka během hovoru je zakázáno"
+      },    
     "restart": {
   "button": "Začít znovu"
 },

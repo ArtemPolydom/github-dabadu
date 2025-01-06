@@ -1,5 +1,8 @@
 {
   "landing": {
+      "language": {
+        "block": "Görüşme sırasında dil değişimi devre dışı"
+      },    
     "restart": {
   "button": "Yeniden Başla"
 },

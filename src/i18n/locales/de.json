@@ -1,5 +1,8 @@
 {
   "landing": {
+      "language": {
+        "block": "Sprachwechsel während des Anrufs deaktiviert"
+      },    
     "restart": {
   "button": "Neu starten"
 },

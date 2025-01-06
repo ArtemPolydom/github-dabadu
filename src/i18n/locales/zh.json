@@ -1,5 +1,8 @@
 {
   "landing": {
+      "language": {
+        "block": "通话期间已禁用语言切换"
+      },    
     "restart": {
   "button": "重新开始"
 },

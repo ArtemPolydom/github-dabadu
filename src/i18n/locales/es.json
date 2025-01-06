@@ -1,5 +1,8 @@
 {
   "landing": {
+      "language": {
+        "block": "Cambio de idioma desactivado durante la llamada"
+      },    
     "restart": {
       "button": "Comenzar de nuevo"
     },
