@@ -24,20 +24,13 @@ export function LanguageSwitcher() {
       setIsCallActive(false);
     };
 
-    const handlePolyStartCall = (event: Event) => {
-      handleStartCall();
-    };
-
-    const handlePolyEndCall = (event: Event) => {
-      handleEndCall();
-    };
-
-    window.addEventListener('polyStartCall', handlePolyStartCall);
-    window.addEventListener('polyEndCall', handlePolyEndCall);
+    // Removed unused event parameters
+    window.addEventListener('polyStartCall', handleStartCall);
+    window.addEventListener('polyEndCall', handleEndCall);
 
     return () => {
-      window.removeEventListener('polyStartCall', handlePolyStartCall);
-      window.removeEventListener('polyEndCall', handlePolyEndCall);
+      window.removeEventListener('polyStartCall', handleStartCall);
+      window.removeEventListener('polyEndCall', handleEndCall);
     };
   }, []);
 
