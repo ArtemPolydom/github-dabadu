@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "Sprachwechsel während des Anrufs deaktiviert"
-      },    
+    "language": {
+      "block": "Sprachwechsel während des Anrufs deaktiviert"
+    },    
     "restart": {
-  "button": "Neu starten"
-},
-"book": {
-  "button": "Demo buchen",
-  "learn": "Erfahren Sie mehr über die Möglichkeiten von Una"
-},    
+      "button": "Neu starten"
+    },
+    "book": {
+      "button": "Demo buchen",
+      "learn": "Erfahren Sie mehr über die Möglichkeiten von Una"
+    },    
     "title": {
       "meet": "Lernen Sie Una kennen,",
-      "employee": "die erste KI-gesteuerte digitale Rezeptionistin"
+      "employee": "der erste KI-gesteuerte Front Desk Agent"
     },
     "subtitle": "Verbessern Sie das Gästeerlebnis & maximieren Sie Direktbuchungen",
     "search": {
       "placeholder": "Geben Sie den Namen Ihres Hotels ein",
-      "button": "Mitarbeiter trainieren",
+      "button": "Start",
       "processing": "Suche läuft...",
       "clear": "Auswahl löschen"
     },
@@ -33,17 +33,17 @@
       "revenue_desc": "Una steigert Direktbuchungen, erfasst Gästepräferenzen und erhöht den Umsatz durch personalisiertes Marketing und optimierte Buchungsprozesse."
     },
     "setup": {
-      "ready": "Ihre virtuelle Rezeptionsleitung ist fast bereit, den Gästeservice zu verbessern!",
+      "ready": "Ihr KI-gesteuerter Front Desk Agent ist fast bereit, den Gästeservice zu verbessern!",
       "service": "Nur noch wenige Schritte bis zum Start des 24/7-Service!",
       "interactions": "Sie sind auf dem Weg zu beeindruckendem, personalisiertem Service.",
-      "support": "Ihre Gäste werden die sofortige Rezeptionsunterstützung schätzen!",
+      "support": "Ihre Gäste werden die sofortige Front Desk Unterstützung schätzen!",
       "satisfaction": "Schritt für Schritt zur Steigerung der Gästezufriedenheit.",
       "bookings": "Fast geschafft - Optimierung der Direktbuchungen steht bevor.",
       "excellence": "Letzter Schritt zum innovativen Hotelmanagement."
     }
   },
   "contact": {
-    "title": "Testen Sie Ihre virtuelle Rezeptionsleitung",
+    "title": "Testen Sie Ihren KI-gesteuerten Front Desk Agent",
     "name": "Geben Sie Ihren Namen ein",
     "email": "Geben Sie Ihre E-Mail-Adresse ein",
     "phone": "Geben Sie Ihre Telefonnummer ein",
@@ -73,7 +73,7 @@
     }
   },
   "call": {
-    "title": "Ihre virtuelle Rezeptionsleitung",
+    "title": "Ihr KI-gesteuerter Front Desk Agent",
     "ready": "ist bereit",
     "subtitle": "Rufen Sie jetzt an, um das Gespräch zu beginnen",
     "button": {

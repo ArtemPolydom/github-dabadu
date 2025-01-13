@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "通话期间已禁用语言切换"
-      },    
+    "language": {
+      "block": "通话期间已禁用语言切换"
+    },    
     "restart": {
-  "button": "重新开始"
-},
-"book": {
-  "button": "预约演示",
-  "learn": "了解Una的功能"
-},    
+      "button": "重新开始"
+    },
+    "book": {
+      "button": "预约演示",
+      "learn": "了解Una的功能"
+    },    
     "title": {
       "meet": "认识 Una，",
-      "employee": "首位人工智能驱动的数字前台接待员"
+      "employee": "首位AI智能前台助理"
     },
     "subtitle": "提升宾客体验，实现直订收益最大化",
     "search": {
       "placeholder": "请输入酒店名称",
-      "button": "培训员工",
+      "button": "开始",
       "processing": "搜索中...",
       "clear": "清除选择"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "Una 通过个性化营销和优化预订流程，提高直接预订量，收集宾客偏好，提升收益。"
     },
     "setup": {
-      "ready": "您的虚拟前台经理即将准备就绪，提升宾客服务！",
+      "ready": "您的AI智能前台助理即将准备就绪，提升宾客服务！",
       "service": "距离启动全天候服务仅剩几步！",
       "interactions": "您正在迈向令人印象深刻的个性化服务。",
       "support": "宾客将享受即时前台支持！",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "测试您的虚拟前台经理",
+    "title": "测试您的AI智能前台助理",
     "name": "输入姓名",
     "email": "输入电子邮箱",
     "phone": "输入手机号码",
@@ -73,7 +73,7 @@
     }
   },
   "call": {
-    "title": "您的虚拟前台经理",
+    "title": "您的AI智能前台助理",
     "ready": "已就绪",
     "subtitle": "立即拨打开始对话",
     "button": {

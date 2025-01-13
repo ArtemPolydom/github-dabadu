@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "Alteração de idioma desativada durante a chamada"
-      },    
+    "language": {
+      "block": "Alteração de idioma desativada durante a chamada"
+    },    
     "restart": {
-  "button": "Recomeçar"
-},
-"book": {
-  "button": "Agendar uma demo",
-  "learn": "Saiba mais sobre o que Una pode fazer"
-},    
+      "button": "Recomeçar"
+    },
+    "book": {
+      "button": "Agendar uma demo",
+      "learn": "Saiba mais sobre o que Una pode fazer"
+    },    
     "title": {
       "meet": "Conheça a Una,",
-      "employee": "a primeira recepcionista digital alimentada por IA"
+      "employee": "o primeiro Agente de Recepção com IA"
     },
     "subtitle": "Melhore a experiência dos hóspedes e maximize as reservas diretas",
     "search": {
       "placeholder": "Digite o nome do seu hotel",
-      "button": "Treinar funcionário",
+      "button": "Iniciar",
       "processing": "Pesquisando...",
       "clear": "Limpar seleção"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "A Una aumenta as reservas diretas, coleta preferências dos hóspedes e impulsiona a receita através de marketing personalizado e processo de reserva otimizado."
     },
     "setup": {
-      "ready": "Sua gerente de recepção virtual está quase pronta para melhorar o atendimento aos hóspedes!",
+      "ready": "Seu Agente de Recepção com IA está quase pronto para melhorar o atendimento aos hóspedes!",
       "service": "Apenas alguns passos para lançar o serviço 24/7!",
       "interactions": "Você está a caminho de um impressionante serviço personalizado.",
       "support": "Seus hóspedes vão adorar o suporte instantâneo da recepção!",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "Teste sua gerente de recepção virtual",
+    "title": "Teste seu Agente de Recepção com IA",
     "name": "Digite seu nome",
     "email": "Digite seu e-mail",
     "phone": "Digite seu número de telefone",
@@ -73,8 +73,8 @@
     }
   },
   "call": {
-    "title": "Sua gerente de recepção virtual",
-    "ready": "está pronta",
+    "title": "Seu Agente de Recepção com IA",
+    "ready": "está pronto",
     "subtitle": "Ligue agora para iniciar a conversa",
     "button": {
       "call": "Ligar",

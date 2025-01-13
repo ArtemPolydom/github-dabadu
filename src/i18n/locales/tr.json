@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "Görüşme sırasında dil değişimi devre dışı"
-      },    
+    "language": {
+      "block": "Görüşme sırasında dil değişimi devre dışı"
+    },    
     "restart": {
-  "button": "Yeniden Başla"
-},
-"book": {
-  "button": "Demo Talep Et",
-  "learn": "Una'nın neler yapabileceği hakkında daha fazla bilgi edinin"
-},    
+      "button": "Yeniden Başla"
+    },
+    "book": {
+      "button": "Demo Talep Et",
+      "learn": "Una'nın neler yapabileceği hakkında daha fazla bilgi edinin"
+    },    
     "title": {
       "meet": "Una ile tanışın,",
-      "employee": "yapay zeka destekli ilk dijital resepsiyon görevlisi"
+      "employee": "ilk yapay zeka destekli Resepsiyon Görevlisi"
     },
     "subtitle": "Misafir Deneyimini İyileştirin ve Direkt Rezervasyonları Maksimize Edin",
     "search": {
       "placeholder": "Otelinizin adını girin",
-      "button": "Çalışanı eğit",
+      "button": "Başlat",
       "processing": "Aranıyor...",
       "clear": "Seçimi temizle"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "Una, kişiselleştirilmiş pazarlama ve optimize edilmiş rezervasyon süreci sayesinde direkt rezervasyonları artırır, misafir tercihlerini toplar ve geliri yükseltir."
     },
     "setup": {
-      "ready": "Sanal resepsiyon yöneticiniz misafir hizmetlerini iyileştirmeye neredeyse hazır!",
+      "ready": "Yapay Zeka Resepsiyon Görevliniz misafir hizmetlerini iyileştirmeye neredeyse hazır!",
       "service": "7/24 hizmeti başlatmaya sadece birkaç adım kaldı!",
       "interactions": "Etkileyici kişiselleştirilmiş hizmete doğru ilerliyorsunuz.",
       "support": "Misafirleriniz anında resepsiyon desteğini takdir edecek!",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "Sanal resepsiyon yöneticinizi test edin",
+    "title": "Yapay Zeka Resepsiyon Görevlinizi test edin",
     "name": "Adınızı girin",
     "email": "E-posta adresinizi girin",
     "phone": "Telefon numaranızı girin",
@@ -73,7 +73,7 @@
     }
   },
   "call": {
-    "title": "Sanal resepsiyon yöneticiniz",
+    "title": "Yapay Zeka Resepsiyon Görevliniz",
     "ready": "hazır",
     "subtitle": "Görüşmeyi başlatmak için şimdi arayın",
     "button": {

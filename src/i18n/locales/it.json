@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "Cambio lingua disabilitato durante la chiamata"
-      },    
+    "language": {
+      "block": "Cambio lingua disabilitato durante la chiamata"
+    },    
     "restart": {
-  "button": "Ricomincia"
-},
-"book": {
-  "button": "Prenota una demo",
-  "learn": "Scopri di più su cosa può fare Una"
-},    
+      "button": "Ricomincia"
+    },
+    "book": {
+      "button": "Prenota una demo",
+      "learn": "Scopri di più su cosa può fare Una"
+    },    
     "title": {
       "meet": "Incontra Una,",
-      "employee": "la prima receptionist digitale alimentata dall'IA"
+      "employee": "il primo Agente di Reception IA"
     },
     "subtitle": "Migliora l'esperienza degli ospiti e massimizza le prenotazioni dirette",
     "search": {
       "placeholder": "Inserisci il nome del tuo hotel",
-      "button": "Forma dipendente",
+      "button": "Inizia",
       "processing": "Ricerca in corso...",
       "clear": "Cancella selezione"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "Una aumenta le prenotazioni dirette, raccoglie le preferenze degli ospiti e incrementa i ricavi attraverso il marketing personalizzato e un processo di prenotazione ottimizzato."
     },
     "setup": {
-      "ready": "Il tuo responsabile reception virtuale è quasi pronto a migliorare il servizio ospiti!",
+      "ready": "Il tuo Agente di Reception IA è quasi pronto a migliorare il servizio ospiti!",
       "service": "Solo pochi passi al lancio del servizio 24/7!",
       "interactions": "Sei sulla strada per un impressionante servizio personalizzato.",
       "support": "I tuoi ospiti apprezzeranno l'assistenza immediata della reception!",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "Prova il tuo responsabile reception virtuale",
+    "title": "Prova il tuo Agente di Reception IA",
     "name": "Inserisci il tuo nome",
     "email": "Inserisci la tua email",
     "phone": "Inserisci il tuo numero di telefono",
@@ -73,7 +73,7 @@
     }
   },
   "call": {
-    "title": "Il tuo responsabile reception virtuale",
+    "title": "Il tuo Agente di Reception IA",
     "ready": "è pronto",
     "subtitle": "Chiama ora per iniziare la conversazione",
     "button": {

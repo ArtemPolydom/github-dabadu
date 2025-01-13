@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "Přepínání jazyka během hovoru je zakázáno"
-      },    
+    "language": {
+      "block": "Přepínání jazyka během hovoru je zakázáno"
+    },    
     "restart": {
-  "button": "Začít znovu"
-},
-"book": {
-  "button": "Rezervovat demo",
-  "learn": "Zjistěte více o možnostech Una"
-},    
+      "button": "Začít znovu"
+    },
+    "book": {
+      "button": "Rezervovat demo",
+      "learn": "Zjistěte více o možnostech Una"
+    },    
     "title": {
       "meet": "Seznamte se s Unou,",
-      "employee": "první digitální recepční s umělou inteligencí"
+      "employee": "první AI recepční asistent"
     },
     "subtitle": "Vylepšete zážitek hostů a maximalizujte přímé rezervace",
     "search": {
       "placeholder": "Zadejte název vašeho hotelu",
-      "button": "Zaškolit zaměstnance",
+      "button": "Start",
       "processing": "Vyhledávání...",
       "clear": "Vymazat výběr"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "Una zvyšuje přímé rezervace, sbírá preference hostů a zvyšuje příjmy prostřednictvím personalizovaného marketingu a optimalizovaného procesu rezervací."
     },
     "setup": {
-      "ready": "Váš virtuální recepční je téměř připraven vylepšit služby hostům!",
+      "ready": "Váš AI recepční asistent je téměř připraven vylepšit služby hostům!",
       "service": "Jen několik kroků od spuštění nepřetržitého servisu!",
       "interactions": "Jste na cestě k působivým personalizovaným službám.",
       "support": "Vaši hosté ocení okamžitou podporu recepce!",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "Otestujte svého virtuálního recepčního",
+    "title": "Otestujte svého AI recepčního asistenta",
     "name": "Zadejte své jméno",
     "email": "Zadejte svůj e-mail",
     "phone": "Zadejte své telefonní číslo",
@@ -73,7 +73,7 @@
     }
   },
   "call": {
-    "title": "Váš virtuální recepční",
+    "title": "Váš AI recepční asistent",
     "ready": "je připraven",
     "subtitle": "Zavolejte nyní pro zahájení konverzace",
     "button": {

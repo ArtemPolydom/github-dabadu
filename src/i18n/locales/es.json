@@ -1,8 +1,8 @@
 {
   "landing": {
-      "language": {
-        "block": "Cambio de idioma desactivado durante la llamada"
-      },    
+    "language": {
+      "block": "Cambio de idioma desactivado durante la llamada"
+    },    
     "restart": {
       "button": "Comenzar de nuevo"
     },
@@ -12,12 +12,12 @@
     },
     "title": {
       "meet": "Habla con Una,",
-      "employee": "la primera recepcionista digital impulsada por IA"
+      "employee": "el primer Agente de Recepción con IA"
     },
     "subtitle": "Mejora la Experiencia del Huésped y Maximiza las Reservas Directas",
     "search": {
       "placeholder": "Ingresa el nombre de tu hotel",
-      "button": "Entrenar empleado",
+      "button": "Iniciar",
       "processing": "Buscando...",
       "clear": "Borrar selección"
     },
@@ -33,29 +33,29 @@
       "revenue_desc": "Una aumenta las reservas directas, recopila preferencias de huéspedes y aumenta los ingresos a través de marketing personalizado y un proceso de reserva simplificado."
     },
     "setup": {
-      "ready": "¡Tu Gerente de Recepción Virtual Está Casi Lista para Mejorar el Servicio al Huésped!",
-      "service": "¡A Solo Unos Pasos de Lanzar el Servicio 24/7!",
-      "interactions": "Estás en Camino a un Impresionante Servicio Personalizado.",
-      "support": "¡Tus Huéspedes Apreciarán el Soporte Instantáneo de Recepción!",
-      "satisfaction": "Paso a Paso Hacia el Aumento de la Satisfacción del Huésped.",
-      "bookings": "Casi Allí - Avanzando Hacia la Optimización de Reservas Directas.",
-      "excellence": "Paso Final Hacia la Gestión Hotelera Innovadora."
+      "ready": "¡Tu Agente de Recepción con IA está casi listo para mejorar el servicio al huésped!",
+      "service": "¡A solo unos pasos de lanzar el servicio 24/7!",
+      "interactions": "Estás en camino a un impresionante servicio personalizado.",
+      "support": "¡Tus huéspedes apreciarán el soporte instantáneo de recepción!",
+      "satisfaction": "Paso a paso hacia el aumento de la satisfacción del huésped.",
+      "bookings": "Casi allí - avanzando hacia la optimización de reservas directas.",
+      "excellence": "Paso final hacia la gestión hotelera innovadora."
     }
   },
   "contact": {
-    "title": "Prueba Tu Gerente de Recepción Virtual",
-    "name": "Ingresa Tu Nombre",
-    "email": "Ingresa Tu Correo Electrónico",
-    "phone": "Ingresa Tu Número de Teléfono",
+    "title": "Prueba tu Agente de Recepción con IA",
+    "name": "Ingresa tu nombre",
+    "email": "Ingresa tu correo electrónico",
+    "phone": "Ingresa tu número de teléfono",
     "terms": {
-      "text": "Al hacer clic en \"Comenzar Prueba\" aceptas los",
+      "text": "Al hacer clic en \"Comenzar prueba\" aceptas los",
       "service": "Términos de Servicio",
       "and": "y",
       "privacy": "Política de Privacidad"
     },
     "button": {
       "loading": "Configurando...",
-      "start": "Comenzar Prueba"
+      "start": "Comenzar prueba"
     }
   },
   "property": {
@@ -69,16 +69,16 @@
       "hours": "24/7"
     },
     "description": {
-      "loading": "Cargando Descripción..."
+      "loading": "Cargando descripción..."
     }
   },
   "call": {
-    "title": "Tu Gerente de Recepción Virtual",
-    "ready": "está Lista",
-    "subtitle": "Llama Ahora para Iniciar la Conversación",
+    "title": "Tu Agente de Recepción con IA",
+    "ready": "está listo",
+    "subtitle": "Llama ahora para iniciar la conversación",
     "button": {
       "call": "Llamar",
-      "end": "Finalizar Llamada"
+      "end": "Finalizar llamada"
     },
     "error": {
       "load": "Error al cargar el sistema de comunicación. Por favor, inténtalo de nuevo más tarde.",

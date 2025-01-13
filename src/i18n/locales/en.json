@@ -12,12 +12,12 @@
     },
     "title": {
       "meet": "Talk to Una,",
-      "employee": "the first digital front desk employee powered by AI"
+      "employee": "the first digital Front Desk AI Agent"
     },
     "subtitle": "Enhance Guest Experience & Maximize Direct Bookings",
     "search": {
       "placeholder": "Enter the name of your hotel",
-      "button": "Train employee",
+      "button": "Start",
       "processing": "Searching...",
       "clear": "Clear Selection"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "Una increases direct bookings, collects guest preferences, and boosts revenue through personalized marketing and streamlined booking process."
     },
     "setup": {
-      "ready": "Your Virtual Front Desk Employee is Almost Ready to Enhance Guest Service!",
+      "ready": "Your Front Desk AI Agent is Almost Ready to Enhance Guest Service!",
       "service": "Just a Few Steps Away from Launching 24/7 Service!",
       "interactions": "You're on Your Way to Impressive Personalized Service.",
       "support": "Your Guests Will Appreciate Instant Front Desk Support!",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "Test Your Virtual Front Desk Employee",
+    "title": "Test Your Front Desk AI Agent",
     "name": "Enter Your Name",
     "email": "Enter Your Email",
     "phone": "Enter Your Phone Number",
@@ -73,7 +73,7 @@
     }
   },
   "call": {
-    "title": "Your Virtual Front Desk Employee",
+    "title": "Your Front Desk AI Agent",
     "ready": "is Ready",
     "subtitle": "Call Now to Start Conversation",
     "button": {

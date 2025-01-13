@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "Språkbyte inaktiverat under samtalet"
-      },    
+    "language": {
+      "block": "Språkbyte inaktiverat under samtalet"
+    },    
     "restart": {
-  "button": "Börja om"
-},
-"book": {
-  "button": "Boka en demo",
-  "learn": "Lär dig mer om vad Una kan göra"
-},    
+      "button": "Börja om"
+    },
+    "book": {
+      "button": "Boka en demo",
+      "learn": "Lär dig mer om vad Una kan göra"
+    },    
     "title": {
       "meet": "Möt Una,",
-      "employee": "den första digitala receptionisten som drivs av AI"
+      "employee": "den första AI-drivna Front Desk-agenten"
     },
     "subtitle": "Förbättra gästupplevelsen och maximera direktbokningar",
     "search": {
       "placeholder": "Ange namnet på ditt hotell",
-      "button": "Träna medarbetare",
+      "button": "Starta",
       "processing": "Söker...",
       "clear": "Rensa val"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "Una ökar direktbokningar, samlar in gästpreferenser och ökar intäkterna genom personaliserad marknadsföring och optimerad bokningsprocess."
     },
     "setup": {
-      "ready": "Din virtuella receptionschef är nästan redo att förbättra gästservicen!",
+      "ready": "Din AI-drivna Front Desk-agent är nästan redo att förbättra gästservicen!",
       "service": "Bara några steg kvar till lanseringen av dygnet runt-service!",
       "interactions": "Du är på väg mot imponerande personlig service.",
       "support": "Dina gäster kommer att uppskatta omedelbar receptionssupport!",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "Testa din virtuella receptionschef",
+    "title": "Testa din AI-drivna Front Desk-agent",
     "name": "Ange ditt namn",
     "email": "Ange din e-postadress",
     "phone": "Ange ditt telefonnummer",
@@ -73,7 +73,7 @@
     }
   },
   "call": {
-    "title": "Din virtuella receptionschef",
+    "title": "Din AI-drivna Front Desk-agent",
     "ready": "är redo",
     "subtitle": "Ring nu för att starta konversationen",
     "button": {

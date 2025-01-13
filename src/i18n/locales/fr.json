@@ -1,23 +1,23 @@
 {
   "landing": {
-      "language": {
-        "block": "Changement de langue désactivé pendant l'appel"
-      },    
+    "language": {
+      "block": "Changement de langue désactivé pendant l'appel"
+    },    
     "restart": {
-  "button": "Recommencer"
-},
-"book": {
-  "button": "Réserver une démo",
-  "learn": "En savoir plus sur les capacités d'Una"
-},    
+      "button": "Recommencer"
+    },
+    "book": {
+      "button": "Réserver une démo",
+      "learn": "En savoir plus sur les capacités d'Una"
+    },    
     "title": {
       "meet": "Découvrez Una,",
-      "employee": "la première réceptionniste numérique alimentée par l'IA"
+      "employee": "le premier Agent de Réception IA"
     },
     "subtitle": "Améliorez l'expérience client et maximisez les réservations directes",
     "search": {
       "placeholder": "Saisissez le nom de votre hôtel",
-      "button": "Former l'employé",
+      "button": "Démarrer",
       "processing": "Recherche en cours...",
       "clear": "Effacer la sélection"
     },
@@ -33,7 +33,7 @@
       "revenue_desc": "Una augmente les réservations directes, collecte les préférences des clients et booste les revenus grâce au marketing personnalisé et à un processus de réservation optimisé."
     },
     "setup": {
-      "ready": "Votre responsable de réception virtuelle est presque prête à améliorer le service client !",
+      "ready": "Votre Agent de Réception IA est presque prêt à améliorer le service client !",
       "service": "Plus que quelques étapes avant le lancement du service 24/7 !",
       "interactions": "Vous êtes en route vers un service personnalisé impressionnant.",
       "support": "Vos clients apprécieront l'assistance instantanée à la réception !",
@@ -43,7 +43,7 @@
     }
   },
   "contact": {
-    "title": "Testez votre responsable de réception virtuelle",
+    "title": "Testez votre Agent de Réception IA",
     "name": "Entrez votre nom",
     "email": "Entrez votre e-mail",
     "phone": "Entrez votre numéro de téléphone",
@@ -73,8 +73,8 @@
     }
   },
   "call": {
-    "title": "Votre responsable de réception virtuelle",
-    "ready": "est prête",
+    "title": "Votre Agent de Réception IA",
+    "ready": "est prêt",
     "subtitle": "Appelez maintenant pour commencer la conversation",
     "button": {
       "call": "Appeler",
