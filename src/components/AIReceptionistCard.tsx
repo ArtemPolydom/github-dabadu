@@ -28,7 +28,7 @@ export function AIReceptionistCard({
   const [isEnabled, setIsEnabled] = useState(false);
   const [isCallActive, setIsCallActive] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
-
+  const [isRestartLocked, setIsRestartLocked] = useState(false);
   const getLocation = () => {
     return `${state}, ${country === 'United States' ? 'USA' : country}`;
   };
@@ -92,12 +92,14 @@ export function AIReceptionistCard({
 
     const handleEndCall = () => {
       setIsCallActive(false);
+      setIsRestartLocked(false);
     };
 
     const handleCallError = (event: CustomEvent) => {
       const message = event.detail.error || event.detail.message;
       setErrorMsg(message);
       setIsCallActive(false);
+      setIsRestartLocked(false);
     };
 
     window.addEventListener('polyStatus', handlePolyStatus as EventListener);
@@ -115,7 +117,7 @@ export function AIReceptionistCard({
 
   const handleCall = () => {
     if (!isEnabled || !window.polyCallAPI) return;
-
+    setIsRestartLocked(true);
     if (isCallActive) {
       window.polyCallAPI.endCall();
     } else {
@@ -193,10 +195,19 @@ export function AIReceptionistCard({
                 {t('landing.book.learn')}
               </span>
             </button>
-            
+
             {onStartAgain && (
               <button
-                onClick={onStartAgain}
+                  onClick={() => {
+                  if (isRestartLocked || isCallActive) return; // Prevent execution if locked or call active
+                  setIsRestartLocked(true); // Lock restarting
+                  try {
+                    onStartAgain(); // Trigger restart function
+                  } finally {
+                    setTimeout(() => setIsRestartLocked(false), 500); // Unlock after a delay
+                  }
+                }}
+                disabled={isRestartLocked || isCallActive}
                 className="flex items-center justify-center gap-2 text-gray-600 py-3 px-6 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
               >
                 <RotateCcw className="w-5 h-5" />

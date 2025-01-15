@@ -125,6 +125,10 @@ export function LandingPage() {
   };
 
   const handleStartAgain = () => {
+    if (window.polyCallAPI?.isInCall?.()) {
+            console.warn("Cannot start again while a call is in progress.");
+            return; // Prevent further actions if in a call
+        }
     // Reset all states to their initial values
     clearSelection?.();
     resetPlacesAutocomplete?.();
